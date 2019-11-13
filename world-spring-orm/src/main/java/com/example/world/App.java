@@ -1,13 +1,31 @@
 package com.example.world;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
+import java.util.function.Consumer;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.example.world.config.AppConfig;
+import com.example.world.entity.Country;
+import com.example.world.repository.CountryRepository;
+import com.example.world.service.BusinessService;
+
+@SuppressWarnings("unused")
+public class App {
+	private static final Consumer<Country> printCountry = country -> {
+		System.err.println(country);
+		System.err.println(country.getCapital());
+		System.err.println(country.getCities().getClass());
+		System.err.println(country.getLanguages().getClass());
+		country.getCities().forEach(System.err::println);
+		country.getLanguages().forEach(System.err::println);
+	};
+
+	public static void main(String[] args) {
+		try (ConfigurableApplicationContext container = new AnnotationConfigApplicationContext(AppConfig.class)) {
+			final CountryRepository repo = container.getBean(CountryRepository.class);
+			container.getBean(BusinessService.class).haveFun();
+//			repo.findById("TUR").ifPresent(printCountry);
+		}
+	}
 }

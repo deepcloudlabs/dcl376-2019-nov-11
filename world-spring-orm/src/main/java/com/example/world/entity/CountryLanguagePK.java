@@ -1,10 +1,13 @@
 package com.example.world.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
+@SuppressWarnings("serial")
 @Embeddable
-public class CountryLanguagePK {
+public class CountryLanguagePK implements Serializable {
 	@Column(nullable = false)
 	private String language;
 	@Column(name = "countrycode", nullable = false)

@@ -19,7 +19,7 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration
-@ComponentScan(basePackages = { "com.example.world.repository.jdbctemplate", "com.example.world.service" })
+@ComponentScan(basePackages = { "com.example.world.repository.orm", "com.example.world.service" })
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")
 public class AppConfig {
