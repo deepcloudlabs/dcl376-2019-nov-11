@@ -12,7 +12,7 @@ public class MyService {
 
 	@Autowired
 	private Set<String> continents;
-	
+
 	@PostConstruct
 	public void init() {
 		continents.forEach(System.err::println);

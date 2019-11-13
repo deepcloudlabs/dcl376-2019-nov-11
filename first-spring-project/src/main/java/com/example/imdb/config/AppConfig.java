@@ -23,9 +23,7 @@ import com.example.imdb.service.business.BusinessComponent;
  *
  */
 @Configuration
-@ComponentScan({ "com.example.imdb.service.business", 
-	"com.example.imdb.config",
-	"com.example.imdb.aspect"})
+@ComponentScan({ "com.example.imdb.service.business", "com.example.imdb.config", "com.example.imdb.aspect" })
 @PropertySource("classpath:database.properties")
 @ImportResource({ "classpath:beans.xml" })
 @EnableAspectJAutoProxy

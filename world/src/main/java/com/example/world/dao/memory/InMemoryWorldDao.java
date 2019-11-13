@@ -1,4 +1,5 @@
 ﻿package com.example.world.dao.memory;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -135,13 +136,11 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(110, new City(110, "Formosa", "ARG", 147636));
 		cities.put(111, new City(111, "Las Heras", "ARG", 145823));
 		cities.put(112, new City(112, "La Rioja", "ARG", 138117));
-		cities.put(113, new City(113, "San Fernando del Valle de Cata", "ARG",
-				134935));
+		cities.put(113, new City(113, "San Fernando del Valle de Cata", "ARG", 134935));
 		cities.put(114, new City(114, "RÂ¡o Cuarto", "ARG", 134355));
 		cities.put(115, new City(115, "Comodoro Rivadavia", "ARG", 124104));
 		cities.put(116, new City(116, "Mendoza", "ARG", 123027));
-		cities.put(117, new City(117, "San NicolÂ s de los Arroyos", "ARG",
-				119302));
+		cities.put(117, new City(117, "San NicolÂ s de los Arroyos", "ARG", 119302));
 		cities.put(118, new City(118, "San Juan", "ARG", 119152));
 		cities.put(119, new City(119, "Escobar", "ARG", 116675));
 		cities.put(120, new City(120, "Concordia", "ARG", 116485));
@@ -249,19 +248,16 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(222, new City(222, "SÃ†o LuÂ¡s", "BRA", 837588));
 		cities.put(223, new City(223, "MaceiÂ¢", "BRA", 786288));
 		cities.put(224, new City(224, "Duque de Caxias", "BRA", 746758));
-		cities.put(225, new City(225, "SÃ†o Bernardo do Campo", "BRA",
-				723132));
+		cities.put(225, new City(225, "SÃ†o Bernardo do Campo", "BRA", 723132));
 		cities.put(226, new City(226, "Teresina", "BRA", 691942));
 		cities.put(227, new City(227, "Natal", "BRA", 688955));
 		cities.put(228, new City(228, "Osasco", "BRA", 659604));
 		cities.put(229, new City(229, "Campo Grande", "BRA", 649593));
 		cities.put(230, new City(230, "Santo Andrâ€š", "BRA", 630073));
 		cities.put(231, new City(231, "JoÃ†o Pessoa", "BRA", 584029));
-		cities.put(232, new City(232, "JaboatÃ†o dos Guararapes", "BRA",
-				558680));
+		cities.put(232, new City(232, "JaboatÃ†o dos Guararapes", "BRA", 558680));
 		cities.put(233, new City(233, "Contagem", "BRA", 520801));
-		cities.put(234, new City(234, "SÃ†o Josâ€š dos Campos", "BRA",
-				515553));
+		cities.put(234, new City(234, "SÃ†o Josâ€š dos Campos", "BRA", 515553));
 		cities.put(235, new City(235, "UberlÆ’ndia", "BRA", 487222));
 		cities.put(236, new City(236, "Feira de Santana", "BRA", 479992));
 		cities.put(237, new City(237, "RibeirÃ†o Preto", "BRA", 473276));
@@ -270,8 +266,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(240, new City(240, "CuiabÂ ", "BRA", 453813));
 		cities.put(241, new City(241, "Juiz de Fora", "BRA", 450288));
 		cities.put(242, new City(242, "Aracaju", "BRA", 445555));
-		cities.put(243, new City(243, "SÃ†o JoÃ†o de Meriti", "BRA",
-				440052));
+		cities.put(243, new City(243, "SÃ†o JoÃ†o de Meriti", "BRA", 440052));
 		cities.put(244, new City(244, "Londrina", "BRA", 432257));
 		cities.put(245, new City(245, "Joinville", "BRA", 428011));
 		cities.put(246, new City(246, "Belford Roxo", "BRA", 425194));
@@ -282,13 +277,11 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(251, new City(251, "CarapicuÂ¡ba", "BRA", 357552));
 		cities.put(252, new City(252, "Olinda", "BRA", 354732));
 		cities.put(253, new City(253, "Campina Grande", "BRA", 352497));
-		cities.put(254, new City(254, "SÃ†o Josâ€š do Rio Preto", "BRA",
-				351944));
+		cities.put(254, new City(254, "SÃ†o Josâ€š do Rio Preto", "BRA", 351944));
 		cities.put(255, new City(255, "Caxias do Sul", "BRA", 349581));
 		cities.put(256, new City(256, "Moji das Cruzes", "BRA", 339194));
 		cities.put(257, new City(257, "Diadema", "BRA", 335078));
-		cities.put(258,
-				new City(258, "Aparecida de GoiÆ’nia", "BRA", 324662));
+		cities.put(258, new City(258, "Aparecida de GoiÆ’nia", "BRA", 324662));
 		cities.put(259, new City(259, "Piracicaba", "BRA", 319104));
 		cities.put(260, new City(260, "Cariacica", "BRA", 319033));
 		cities.put(261, new City(261, "Vila Velha", "BRA", 318758));
@@ -341,8 +334,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(308, new City(308, "Juazeiro", "BRA", 201073));
 		cities.put(309, new City(309, "Juazeiro do Norte", "BRA", 199636));
 		cities.put(310, new City(310, "TaboÃ†o da Serra", "BRA", 197550));
-		cities.put(311, new City(311, "SÃ†o Josâ€š dos Pinhais", "BRA",
-				196884));
+		cities.put(311, new City(311, "SÃ†o Josâ€š dos Pinhais", "BRA", 196884));
 		cities.put(312, new City(312, "Magâ€š", "BRA", 196147));
 		cities.put(313, new City(313, "Suzano", "BRA", 195434));
 		cities.put(314, new City(314, "SÃ†o Leopoldo", "BRA", 189258));
@@ -361,8 +353,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(327, new City(327, "Alvorada", "BRA", 175574));
 		cities.put(328, new City(328, "Araraquara", "BRA", 174381));
 		cities.put(329, new City(329, "ItaboraÂ¡", "BRA", 173977));
-		cities.put(330, new City(330, "Santa BÂ rbara dÃ¯Oeste", "BRA",
-				171657));
+		cities.put(330, new City(330, "Santa BÂ rbara dÃ¯Oeste", "BRA", 171657));
 		cities.put(331, new City(331, "Nova Friburgo", "BRA", 170697));
 		cities.put(332, new City(332, "JacareÂ¡", "BRA", 170356));
 		cities.put(333, new City(333, "Araâ€¡atuba", "BRA", 169303));
@@ -395,8 +386,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(360, new City(360, "Caxias", "BRA", 133980));
 		cities.put(361, new City(361, "SÃ†o Caetano do Sul", "BRA", 133321));
 		cities.put(362, new City(362, "Itu", "BRA", 132736));
-		cities.put(363,
-				new City(363, "Nossa Senhora do Socorro", "BRA", 131351));
+		cities.put(363, new City(363, "Nossa Senhora do Socorro", "BRA", 131351));
 		cities.put(364, new City(364, "ParnaÂ¡ba", "BRA", 129756));
 		cities.put(365, new City(365, "Poâ€¡os de Caldas", "BRA", 129683));
 		cities.put(366, new City(366, "TeresÂ¢polis", "BRA", 128079));
@@ -425,8 +415,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(389, new City(389, "Queimados", "BRA", 115020));
 		cities.put(390, new City(390, "AraguaÂ¡na", "BRA", 114948));
 		cities.put(391, new City(391, "Garanhuns", "BRA", 114603));
-		cities.put(392, new City(392, "VitÂ¢ria de Santo AntÃ†o", "BRA",
-				113595));
+		cities.put(392, new City(392, "VitÂ¢ria de Santo AntÃ†o", "BRA", 113595));
 		cities.put(393, new City(393, "Santa Rita", "BRA", 113135));
 		cities.put(394, new City(394, "Barbacena", "BRA", 113079));
 		cities.put(395, new City(395, "Abaetetuba", "BRA", 111258));
@@ -460,8 +449,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(423, new City(423, "Crato", "BRA", 98965));
 		cities.put(424, new City(424, "Passos", "BRA", 98570));
 		cities.put(425, new City(425, "Araguari", "BRA", 98399));
-		cities.put(426, new City(426, "SÃ†o Josâ€š de Ribamar", "BRA",
-				98318));
+		cities.put(426, new City(426, "SÃ†o Josâ€š de Ribamar", "BRA", 98318));
 		cities.put(427, new City(427, "Pinhais", "BRA", 98198));
 		cities.put(428, new City(428, "SertÃ†ozinho", "BRA", 98140));
 		cities.put(429, new City(429, "Conselheiro Lafaiete", "BRA", 97507));
@@ -479,8 +467,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(441, new City(441, "Bacabal", "BRA", 93121));
 		cities.put(442, new City(442, "CametÂ ", "BRA", 92779));
 		cities.put(443, new City(443, "GuaÂ¡ba", "BRA", 92224));
-		cities.put(444, new City(444, "SÃ†o Lourenâ€¡o da Mata", "BRA",
-				91999));
+		cities.put(444, new City(444, "SÃ†o Lourenâ€¡o da Mata", "BRA", 91999));
 		cities.put(445, new City(445, "Santana do Livramento", "BRA", 91779));
 		cities.put(446, new City(446, "Votorantim", "BRA", 91777));
 		cities.put(447, new City(447, "Campo Largo", "BRA", 91203));
@@ -491,8 +478,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(452, new City(452, "Barra do PiraÂ¡", "BRA", 89388));
 		cities.put(453, new City(453, "Bento Gonâ€¡alves", "BRA", 89254));
 		cities.put(454, new City(454, "PoÂ ", "BRA", 89236));
-		cities.put(455, new City(455, "Âµguas Lindas de GoiÂ s", "BRA",
-				89200));
+		cities.put(455, new City(455, "Âµguas Lindas de GoiÂ s", "BRA", 89200));
 		cities.put(456, new City(456, "London", "GBR", 7285000));
 		cities.put(457, new City(457, "Birmingham", "GBR", 1013000));
 		cities.put(458, new City(458, "Glasgow", "GBR", 619680));
@@ -532,8 +518,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(492, new City(492, "Dundee", "GBR", 146690));
 		cities.put(493, new City(493, "West Bromwich", "GBR", 146386));
 		cities.put(494, new City(494, "Reading", "GBR", 148000));
-		cities.put(495, new City(495, "Oldbury/Smethwick (Warley)", "GBR",
-				145542));
+		cities.put(495, new City(495, "Oldbury/Smethwick (Warley)", "GBR", 145542));
 		cities.put(496, new City(496, "Middlesbrough", "GBR", 145000));
 		cities.put(497, new City(497, "Huddersfield", "GBR", 143726));
 		cities.put(498, new City(498, "Oxford", "GBR", 144000));
@@ -625,22 +610,17 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(584, new City(584, "San Josâ€š", "CRI", 339131));
 		cities.put(585, new City(585, "Djibouti", "DJI", 383000));
 		cities.put(586, new City(586, "Roseau", "DMA", 16243));
-		cities.put(587, new City(587, "Santo Domingo de GuzmÂ n", "DOM",
-				1609966));
-		cities.put(588, new City(588, "Santiago de los Caballeros", "DOM",
-				365463));
+		cities.put(587, new City(587, "Santo Domingo de GuzmÂ n", "DOM", 1609966));
+		cities.put(588, new City(588, "Santiago de los Caballeros", "DOM", 365463));
 		cities.put(589, new City(589, "La Romana", "DOM", 140204));
 		cities.put(590, new City(590, "San Pedro de MacorÂ¡s", "DOM", 124735));
-		cities.put(591, new City(591, "San Francisco de MacorÂ¡s", "DOM",
-				108485));
-		cities.put(592, new City(592, "San Felipe de Puerto Plata", "DOM",
-				89423));
+		cities.put(591, new City(591, "San Francisco de MacorÂ¡s", "DOM", 108485));
+		cities.put(592, new City(592, "San Felipe de Puerto Plata", "DOM", 89423));
 		cities.put(593, new City(593, "Guayaquil", "ECU", 2070040));
 		cities.put(594, new City(594, "Quito", "ECU", 1573458));
 		cities.put(595, new City(595, "Cuenca", "ECU", 270353));
 		cities.put(596, new City(596, "Machala", "ECU", 210368));
-		cities.put(597, new City(597, "Santo Domingo de los Colorados", "ECU",
-				202111));
+		cities.put(597, new City(597, "Santo Domingo de los Colorados", "ECU", 202111));
 		cities.put(598, new City(598, "Portoviejo", "ECU", 176413));
 		cities.put(599, new City(599, "Ambato", "ECU", 169612));
 		cities.put(600, new City(600, "Manta", "ECU", 164739));
@@ -703,8 +683,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(657, new City(657, "Zaragoza", "ESP", 603367));
 		cities.put(658, new City(658, "MÂ laga", "ESP", 530553));
 		cities.put(659, new City(659, "Bilbao", "ESP", 357589));
-		cities.put(660, new City(660, "Las Palmas de Gran Canaria", "ESP",
-				354757));
+		cities.put(660, new City(660, "Las Palmas de Gran Canaria", "ESP", 354757));
 		cities.put(661, new City(661, "Murcia", "ESP", 353504));
 		cities.put(662, new City(662, "Palma de Mallorca", "ESP", 326993));
 		cities.put(663, new City(663, "Valladolid", "ESP", 319998));
@@ -712,11 +691,9 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(665, new City(665, "Vigo", "ESP", 283670));
 		cities.put(666, new City(666, "Alicante [Alacant]", "ESP", 272432));
 		cities.put(667, new City(667, "GijÂ¢n", "ESP", 267980));
-		cities.put(668, new City(668, "LÃ¯Hospitalet de Llobregat", "ESP",
-				247986));
+		cities.put(668, new City(668, "LÃ¯Hospitalet de Llobregat", "ESP", 247986));
 		cities.put(669, new City(669, "Granada", "ESP", 244767));
-		cities.put(670, new City(670, "A CoruÂ¤a (La CoruÂ¤a)", "ESP",
-				243402));
+		cities.put(670, new City(670, "A CoruÂ¤a (La CoruÂ¤a)", "ESP", 243402));
 		cities.put(671, new City(671, "Vitoria-Gasteiz", "ESP", 217154));
 		cities.put(672, new City(672, "Santa Cruz de Tenerife", "ESP", 213050));
 		cities.put(673, new City(673, "Badalona", "ESP", 209635));
@@ -727,8 +704,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(678, new City(678, "Santander", "ESP", 184165));
 		cities.put(679, new City(679, "Jerez de la Frontera", "ESP", 182660));
 		cities.put(680, new City(680, "Pamplona [IruÂ¤a]", "ESP", 180483));
-		cities.put(681, new City(681, "Donostia-San SebastiÂ n", "ESP",
-				179208));
+		cities.put(681, new City(681, "Donostia-San SebastiÂ n", "ESP", 179208));
 		cities.put(682, new City(682, "Cartagena", "ESP", 177709));
 		cities.put(683, new City(683, "Leganâ€šs", "ESP", 173163));
 		cities.put(684, new City(684, "Fuenlabrada", "ESP", 171173));
@@ -743,14 +719,11 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(693, new City(693, "AlcorcÂ¢n", "ESP", 142048));
 		cities.put(694, new City(694, "Huelva", "ESP", 140583));
 		cities.put(695, new City(695, "LeÂ¢n", "ESP", 139809));
-		cities.put(696, new City(696, "CastellÂ¢n de la Plana [Castell",
-				"ESP", 139712));
+		cities.put(696, new City(696, "CastellÂ¢n de la Plana [Castell", "ESP", 139712));
 		cities.put(697, new City(697, "Badajoz", "ESP", 136613));
-		cities.put(698, new City(698, "[San CristÂ¢bal de] la Laguna", "ESP",
-				127945));
+		cities.put(698, new City(698, "[San CristÂ¢bal de] la Laguna", "ESP", 127945));
 		cities.put(699, new City(699, "LogroÂ¤o", "ESP", 127093));
-		cities.put(700,
-				new City(700, "Santa Coloma de Gramenet", "ESP", 120802));
+		cities.put(700, new City(700, "Santa Coloma de Gramenet", "ESP", 120802));
 		cities.put(701, new City(701, "Tarragona", "ESP", 113016));
 		cities.put(702, new City(702, "Lleida (Lâ€šrida)", "ESP", 112207));
 		cities.put(703, new City(703, "Jaâ€šn", "ESP", 109247));
@@ -837,8 +810,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(784, new City(784, "Iloilo", "PHL", 365820));
 		cities.put(785, new City(785, "Pasay", "PHL", 354908));
 		cities.put(786, new City(786, "Malabon", "PHL", 338855));
-		cities.put(787,
-				new City(787, "San Josâ€š del Monte", "PHL", 315807));
+		cities.put(787, new City(787, "San Josâ€š del Monte", "PHL", 315807));
 		cities.put(788, new City(788, "Bacoor", "PHL", 305699));
 		cities.put(789, new City(789, "Iligan", "PHL", 285061));
 		cities.put(790, new City(790, "Calamba", "PHL", 281146));
@@ -987,8 +959,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(933, new City(933, "Tegucigalpa", "HND", 813900));
 		cities.put(934, new City(934, "San Pedro Sula", "HND", 383900));
 		cities.put(935, new City(935, "La Ceiba", "HND", 89200));
-		cities.put(936,
-				new City(936, "Kowloon and New Kowloon", "HKG", 1987996));
+		cities.put(936, new City(936, "Kowloon and New Kowloon", "HKG", 1987996));
 		cities.put(937, new City(937, "Victoria", "HKG", 1312637));
 		cities.put(938, new City(938, "Longyearbyen", "SJM", 1438));
 		cities.put(939, new City(939, "Jakarta", "IDN", 9604900));
@@ -1120,13 +1091,11 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1062, new City(1062, "Ranchi", "IND", 599306));
 		cities.put(1063, new City(1063, "Bareilly", "IND", 587211));
 		cities.put(1064, new City(1064, "Guwahati (Gauhati)", "IND", 584342));
-		cities.put(1065, new City(1065, "Shambajinagar (Aurangabad)", "IND",
-				573272));
+		cities.put(1065, new City(1065, "Shambajinagar (Aurangabad)", "IND", 573272));
 		cities.put(1066, new City(1066, "Cochin (Kochi)", "IND", 564589));
 		cities.put(1067, new City(1067, "Rajkot", "IND", 559407));
 		cities.put(1068, new City(1068, "Kota", "IND", 537371));
-		cities.put(1069, new City(1069, "Thiruvananthapuram (Trivandrum",
-				"IND", 524006));
+		cities.put(1069, new City(1069, "Thiruvananthapuram (Trivandrum", "IND", 524006));
 		cities.put(1070, new City(1070, "Pimpri-Chinchwad", "IND", 517083));
 		cities.put(1071, new City(1071, "Jalandhar (Jullundur)", "IND", 509510));
 		cities.put(1072, new City(1072, "Gorakhpur", "IND", 505566));
@@ -1194,8 +1163,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1134, new City(1134, "South Dum Dum", "IND", 232811));
 		cities.put(1135, new City(1135, "Mathura", "IND", 226691));
 		cities.put(1136, new City(1136, "Chandrapur", "IND", 226105));
-		cities.put(1137, new City(1137, "Barahanagar (Baranagar)", "IND",
-				224821));
+		cities.put(1137, new City(1137, "Barahanagar (Baranagar)", "IND", 224821));
 		cities.put(1138, new City(1138, "Darbhanga", "IND", 218391));
 		cities.put(1139, new City(1139, "Siliguri (Shiliguri)", "IND", 216950));
 		cities.put(1140, new City(1140, "Raurkela", "IND", 215489));
@@ -1215,8 +1183,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1154, new City(1154, "Imphal", "IND", 198535));
 		cities.put(1155, new City(1155, "Latur", "IND", 197408));
 		cities.put(1156, new City(1156, "Sagar", "IND", 195346));
-		cities.put(1157, new City(1157, "Farrukhabad-cum-Fatehgarh", "IND",
-				194567));
+		cities.put(1157, new City(1157, "Farrukhabad-cum-Fatehgarh", "IND", 194567));
 		cities.put(1158, new City(1158, "Sangli", "IND", 193197));
 		cities.put(1159, new City(1159, "Parbhani", "IND", 190255));
 		cities.put(1160, new City(1160, "Nagar Coil", "IND", 190084));
@@ -1242,8 +1209,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1180, new City(1180, "Burhanpur", "IND", 172710));
 		cities.put(1181, new City(1181, "Hisar (Hissar)", "IND", 172677));
 		cities.put(1182, new City(1182, "Tiruvottiyur", "IND", 172562));
-		cities.put(1183, new City(1183, "Mirzapur-cum-Vindhyachal", "IND",
-				169336));
+		cities.put(1183, new City(1183, "Mirzapur-cum-Vindhyachal", "IND", 169336));
 		cities.put(1184, new City(1184, "Secunderabad", "IND", 167461));
 		cities.put(1185, new City(1185, "Nadiad", "IND", 167051));
 		cities.put(1186, new City(1186, "Dewas", "IND", 164364));
@@ -1251,8 +1217,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1188, new City(1188, "Ganganagar", "IND", 161482));
 		cities.put(1189, new City(1189, "Vizianagaram", "IND", 160359));
 		cities.put(1190, new City(1190, "Erode", "IND", 159232));
-		cities.put(1191, new City(1191, "Machilipatnam (Masulipatam)", "IND",
-				159110));
+		cities.put(1191, new City(1191, "Machilipatnam (Masulipatam)", "IND", 159110));
 		cities.put(1192, new City(1192, "Bhatinda (Bathinda)", "IND", 159042));
 		cities.put(1193, new City(1193, "Raichur", "IND", 157551));
 		cities.put(1194, new City(1194, "Agartala", "IND", 157358));
@@ -1284,12 +1249,10 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1220, new City(1220, "Yamuna Nagar", "IND", 144346));
 		cities.put(1221, new City(1221, "Sonipat (Sonepat)", "IND", 143922));
 		cities.put(1222, new City(1222, "Tenali", "IND", 143726));
-		cities.put(1223, new City(1223, "Raurkela Civil Township", "IND",
-				140408));
+		cities.put(1223, new City(1223, "Raurkela Civil Township", "IND", 140408));
 		cities.put(1224, new City(1224, "Kollam (Quilon)", "IND", 139852));
 		cities.put(1225, new City(1225, "Kumbakonam", "IND", 139483));
-		cities.put(1226, new City(1226, "Ingraj Bazar (English Bazar)", "IND",
-				139204));
+		cities.put(1226, new City(1226, "Ingraj Bazar (English Bazar)", "IND", 139204));
 		cities.put(1227, new City(1227, "Timkur", "IND", 138903));
 		cities.put(1228, new City(1228, "Amroha", "IND", 137061));
 		cities.put(1229, new City(1229, "Serampore", "IND", 137028));
@@ -1348,8 +1311,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1282, new City(1282, "Budaun", "IND", 116695));
 		cities.put(1283, new City(1283, "Porbandar", "IND", 116671));
 		cities.put(1284, new City(1284, "Silchar", "IND", 115483));
-		cities.put(1285, new City(1285, "Berhampore (Baharampur)", "IND",
-				115144));
+		cities.put(1285, new City(1285, "Berhampore (Baharampur)", "IND", 115144));
 		cities.put(1286, new City(1286, "Purnea (Purnia)", "IND", 114912));
 		cities.put(1287, new City(1287, "Bankura", "IND", 114876));
 		cities.put(1288, new City(1288, "Rajapalaiyam", "IND", 114202));
@@ -1382,10 +1344,8 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1315, new City(1315, "Beawar", "IND", 105363));
 		cities.put(1316, new City(1316, "Hindupur", "IND", 104651));
 		cities.put(1317, new City(1317, "Gandhidham", "IND", 104585));
-		cities.put(1318,
-				new City(1318, "Haldwani-cum-Kathgodam", "IND", 104195));
-		cities.put(1319, new City(1319, "Tellicherry (Thalassery)", "IND",
-				103579));
+		cities.put(1318, new City(1318, "Haldwani-cum-Kathgodam", "IND", 104195));
+		cities.put(1319, new City(1319, "Tellicherry (Thalassery)", "IND", 103579));
 		cities.put(1320, new City(1320, "Wardha", "IND", 102985));
 		cities.put(1321, new City(1321, "Rishra", "IND", 102649));
 		cities.put(1322, new City(1322, "Bhuj", "IND", 102176));
@@ -1555,8 +1515,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1486, new City(1486, "Livorno", "ITA", 161673));
 		cities.put(1487, new City(1487, "Perugia", "ITA", 156673));
 		cities.put(1488, new City(1488, "Foggia", "ITA", 154891));
-		cities.put(1489,
-				new City(1489, "Reggio nellÃ¯ Emilia", "ITA", 143664));
+		cities.put(1489, new City(1489, "Reggio nellÃ¯ Emilia", "ITA", 143664));
 		cities.put(1490, new City(1490, "Salerno", "ITA", 142055));
 		cities.put(1491, new City(1491, "Ravenna", "ITA", 138418));
 		cities.put(1492, new City(1492, "Ferrara", "ITA", 132127));
@@ -1984,8 +1943,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(1914, new City(1914, "Guiyang", "CHN", 1465200));
 		cities.put(1915, new City(1915, "Ningbo", "CHN", 1371200));
 		cities.put(1916, new City(1916, "Hefei", "CHN", 1369100));
-		cities.put(1917, new City(1917, "Urumt?i [Å¡rÂ�mqi]", "CHN",
-				1310100));
+		cities.put(1917, new City(1917, "Urumt?i [Å¡rÂ�mqi]", "CHN", 1310100));
 		cities.put(1918, new City(1918, "Anshan", "CHN", 1200000));
 		cities.put(1919, new City(1919, "Fushun", "CHN", 1200000));
 		cities.put(1920, new City(1920, "Nanning", "CHN", 1161800));
@@ -2328,8 +2286,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2254, new City(2254, "Osh", "KGZ", 222700));
 		cities.put(2255, new City(2255, "Bikenibeu", "KIR", 5055));
 		cities.put(2256, new City(2256, "Bairiki", "KIR", 2226));
-		cities.put(2257, new City(2257, "Santafâ€š de BogotÂ ", "COL",
-				6260862));
+		cities.put(2257, new City(2257, "Santafâ€š de BogotÂ ", "COL", 6260862));
 		cities.put(2258, new City(2258, "Cali", "COL", 2077386));
 		cities.put(2259, new City(2259, "MedellÂ¡n", "COL", 1861265));
 		cities.put(2260, new City(2260, "Barranquilla", "COL", 1223260));
@@ -2524,8 +2481,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2449, new City(2449, "Klaipeda", "LTU", 202451));
 		cities.put(2450, new City(2450, "?iauliai", "LTU", 146563));
 		cities.put(2451, new City(2451, "Panevezys", "LTU", 133695));
-		cities.put(2452, new City(2452,
-				"Luxembourg [Luxemburg/Lâ€°tzebuerg]", "LUX", 80700));
+		cities.put(2452, new City(2452, "Luxembourg [Luxemburg/Lâ€°tzebuerg]", "LUX", 80700));
 		cities.put(2453, new City(2453, "El-AaiÂ£n", "ESH", 169000));
 		cities.put(2454, new City(2454, "Macao", "MAC", 437500));
 		cities.put(2455, new City(2455, "Antananarivo", "MDG", 675669));
@@ -2591,8 +2547,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2512, new City(2512, "Beau Bassin-Rose Hill", "MUS", 100616));
 		cities.put(2513, new City(2513, "Vacoas-Phoenix", "MUS", 98464));
 		cities.put(2514, new City(2514, "Mamoutzou", "MYT", 12000));
-		cities.put(2515, new City(2515, "Ciudad de Mâ€šxico", "MEX",
-				8591309));
+		cities.put(2515, new City(2515, "Ciudad de Mâ€šxico", "MEX", 8591309));
 		cities.put(2516, new City(2516, "Guadalajara", "MEX", 1647720));
 		cities.put(2517, new City(2517, "Ecatepec de Morelos", "MEX", 1620303));
 		cities.put(2518, new City(2518, "Puebla", "MEX", 1346176));
@@ -2602,8 +2557,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2522, new City(2522, "LeÂ¢n", "MEX", 1133576));
 		cities.put(2523, new City(2523, "Monterrey", "MEX", 1108499));
 		cities.put(2524, new City(2524, "Zapopan", "MEX", 1002239));
-		cities.put(2525,
-				new City(2525, "Naucalpan de JuÂ rez", "MEX", 857511));
+		cities.put(2525, new City(2525, "Naucalpan de JuÂ rez", "MEX", 857511));
 		cities.put(2526, new City(2526, "Mexicali", "MEX", 764902));
 		cities.put(2527, new City(2527, "CuliacÂ n", "MEX", 744859));
 		cities.put(2528, new City(2528, "Acapulco de JuÂ rez", "MEX", 721011));
@@ -2620,18 +2574,15 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2539, new City(2539, "Saltillo", "MEX", 577352));
 		cities.put(2540, new City(2540, "TorreÂ¢n", "MEX", 529093));
 		cities.put(2541, new City(2541, "Centro (Villahermosa)", "MEX", 519873));
-		cities.put(2542, new City(2542, "San NicolÂ s de los Garza", "MEX",
-				495540));
+		cities.put(2542, new City(2542, "San NicolÂ s de los Garza", "MEX", 495540));
 		cities.put(2543, new City(2543, "Durango", "MEX", 490524));
 		cities.put(2544, new City(2544, "ChimalhuacÂ n", "MEX", 490245));
 		cities.put(2545, new City(2545, "Tlaquepaque", "MEX", 475472));
-		cities.put(2546, new City(2546, "AtizapÂ n de Zaragoza", "MEX",
-				467262));
+		cities.put(2546, new City(2546, "AtizapÂ n de Zaragoza", "MEX", 467262));
 		cities.put(2547, new City(2547, "Veracruz", "MEX", 457119));
 		cities.put(2548, new City(2548, "CuautitlÂ n Izcalli", "MEX", 452976));
 		cities.put(2549, new City(2549, "Irapuato", "MEX", 440039));
-		cities.put(2550,
-				new City(2550, "Tuxtla Gutiâ€šrrez", "MEX", 433544));
+		cities.put(2550, new City(2550, "Tuxtla Gutiâ€šrrez", "MEX", 433544));
 		cities.put(2551, new City(2551, "TultitlÂ n", "MEX", 432411));
 		cities.put(2552, new City(2552, "Reynosa", "MEX", 419776));
 		cities.put(2553, new City(2553, "Benito JuÂ rez", "MEX", 419276));
@@ -2644,8 +2595,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2560, new City(2560, "Cajeme", "MEX", 355679));
 		cities.put(2561, new City(2561, "Cuernavaca", "MEX", 337966));
 		cities.put(2562, new City(2562, "TonalÂ ", "MEX", 336109));
-		cities.put(2563, new City(2563, "Valle de Chalco Solidaridad", "MEX",
-				323113));
+		cities.put(2563, new City(2563, "Valle de Chalco Solidaridad", "MEX", 323113));
 		cities.put(2564, new City(2564, "Nuevo Laredo", "MEX", 310277));
 		cities.put(2565, new City(2565, "Tepic", "MEX", 305025));
 		cities.put(2566, new City(2566, "Tampico", "MEX", 294789));
@@ -2659,8 +2609,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2574, new City(2574, "Uruapan", "MEX", 265211));
 		cities.put(2575, new City(2575, "Victoria", "MEX", 262686));
 		cities.put(2576, new City(2576, "Oaxaca de JuÂ rez", "MEX", 256848));
-		cities.put(2577, new City(2577, "Coacalco de BerriozÂ bal", "MEX",
-				252270));
+		cities.put(2577, new City(2577, "Coacalco de BerriozÂ bal", "MEX", 252270));
 		cities.put(2578, new City(2578, "Pachuca de Soto", "MEX", 244688));
 		cities.put(2579, new City(2579, "General Escobedo", "MEX", 232961));
 		cities.put(2580, new City(2580, "Salamanca", "MEX", 226864));
@@ -2670,23 +2619,19 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2584, new City(2584, "CÂ rdenas", "MEX", 216903));
 		cities.put(2585, new City(2585, "Campeche", "MEX", 216735));
 		cities.put(2586, new City(2586, "La Paz", "MEX", 213045));
-		cities.put(2587, new City(2587, "OthÂ¢n P. Blanco (Chetumal)", "MEX",
-				208014));
+		cities.put(2587, new City(2587, "OthÂ¢n P. Blanco (Chetumal)", "MEX", 208014));
 		cities.put(2588, new City(2588, "Texcoco", "MEX", 203681));
 		cities.put(2589, new City(2589, "La Paz", "MEX", 196708));
 		cities.put(2590, new City(2590, "Metepec", "MEX", 194265));
 		cities.put(2591, new City(2591, "Monclova", "MEX", 193657));
 		cities.put(2592, new City(2592, "Huixquilucan", "MEX", 193156));
-		cities.put(2593, new City(2593, "Chilpancingo de los Bravo", "MEX",
-				192509));
+		cities.put(2593, new City(2593, "Chilpancingo de los Bravo", "MEX", 192509));
 		cities.put(2594, new City(2594, "Puerto Vallarta", "MEX", 183741));
 		cities.put(2595, new City(2595, "Fresnillo", "MEX", 182744));
 		cities.put(2596, new City(2596, "Ciudad Madero", "MEX", 182012));
-		cities.put(2597, new City(2597, "Soledad de Graciano SÂ nchez",
-				"MEX", 179956));
+		cities.put(2597, new City(2597, "Soledad de Graciano SÂ nchez", "MEX", 179956));
 		cities.put(2598, new City(2598, "San Juan del RÂ¡o", "MEX", 179300));
-		cities.put(2599, new City(2599, "San Felipe del Progreso", "MEX",
-				177330));
+		cities.put(2599, new City(2599, "San Felipe del Progreso", "MEX", 177330));
 		cities.put(2600, new City(2600, "CÂ¢rdoba", "MEX", 176952));
 		cities.put(2601, new City(2601, "TecÂ mac", "MEX", 172410));
 		cities.put(2602, new City(2602, "Ocosingo", "MEX", 171495));
@@ -2703,11 +2648,9 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2613, new City(2613, "Poza Rica de Hidalgo", "MEX", 152678));
 		cities.put(2614, new City(2614, "Ciudad Valles", "MEX", 146411));
 		cities.put(2615, new City(2615, "Navolato", "MEX", 145396));
-		cities.put(2616, new City(2616, "San Luis RÂ¡o Colorado", "MEX",
-				145276));
+		cities.put(2616, new City(2616, "San Luis RÂ¡o Colorado", "MEX", 145276));
 		cities.put(2617, new City(2617, "Pâ€šnjamo", "MEX", 143927));
-		cities.put(2618, new City(2618, "San Andrâ€šs Tuxtla", "MEX",
-				142251));
+		cities.put(2618, new City(2618, "San Andrâ€šs Tuxtla", "MEX", 142251));
 		cities.put(2619, new City(2619, "Guanajuato", "MEX", 141215));
 		cities.put(2620, new City(2620, "Navojoa", "MEX", 140495));
 		cities.put(2621, new City(2621, "ZitÂ cuaro", "MEX", 137970));
@@ -2715,10 +2658,8 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2623, new City(2623, "Allende", "MEX", 134645));
 		cities.put(2624, new City(2624, "Silao", "MEX", 134037));
 		cities.put(2625, new City(2625, "Macuspana", "MEX", 133795));
-		cities.put(2626, new City(2626, "San Juan Bautista Tuxtepec", "MEX",
-				133675));
-		cities.put(2627, new City(2627, "San CristÂ¢bal de las Casas", "MEX",
-				132317));
+		cities.put(2626, new City(2626, "San Juan Bautista Tuxtepec", "MEX", 133675));
+		cities.put(2627, new City(2627, "San CristÂ¢bal de las Casas", "MEX", 132317));
 		cities.put(2628, new City(2628, "Valle de Santiago", "MEX", 130557));
 		cities.put(2629, new City(2629, "Guaymas", "MEX", 130108));
 		cities.put(2630, new City(2630, "Colima", "MEX", 129454));
@@ -2727,23 +2668,17 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2633, new City(2633, "Piedras Negras", "MEX", 127898));
 		cities.put(2634, new City(2634, "Altamira", "MEX", 127490));
 		cities.put(2635, new City(2635, "TÂ£xpam", "MEX", 126475));
-		cities.put(2636, new City(2636, "San Pedro Garza GarcÂ¡a", "MEX",
-				126147));
+		cities.put(2636, new City(2636, "San Pedro Garza GarcÂ¡a", "MEX", 126147));
 		cities.put(2637, new City(2637, "Cuauhtâ€šmoc", "MEX", 124279));
 		cities.put(2638, new City(2638, "Manzanillo", "MEX", 124014));
-		cities.put(2639, new City(2639, "Iguala de la Independencia", "MEX",
-				123883));
+		cities.put(2639, new City(2639, "Iguala de la Independencia", "MEX", 123883));
 		cities.put(2640, new City(2640, "Zacatecas", "MEX", 123700));
-		cities.put(2641, new City(2641, "Tlajomulco de ZÂ£Â¤iga", "MEX",
-				123220));
+		cities.put(2641, new City(2641, "Tlajomulco de ZÂ£Â¤iga", "MEX", 123220));
 		cities.put(2642, new City(2642, "Tulancingo de Bravo", "MEX", 121946));
 		cities.put(2643, new City(2643, "Zinacantepec", "MEX", 121715));
-		cities.put(2644, new City(2644, "San MartÂ¡n Texmelucan", "MEX",
-				121093));
-		cities.put(2645, new City(2645, "TepatitlÂ n de Morelos", "MEX",
-				118948));
-		cities.put(2646, new City(2646, "MartÂ¡nez de la Torre", "MEX",
-				118815));
+		cities.put(2644, new City(2644, "San MartÂ¡n Texmelucan", "MEX", 121093));
+		cities.put(2645, new City(2645, "TepatitlÂ n de Morelos", "MEX", 118948));
+		cities.put(2646, new City(2646, "MartÂ¡nez de la Torre", "MEX", 118815));
 		cities.put(2647, new City(2647, "Orizaba", "MEX", 118488));
 		cities.put(2648, new City(2648, "ApatzingÂ n", "MEX", 117849));
 		cities.put(2649, new City(2649, "Atlixco", "MEX", 117019));
@@ -2758,15 +2693,13 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2658, new City(2658, "Huejutla de Reyes", "MEX", 108017));
 		cities.put(2659, new City(2659, "Hidalgo", "MEX", 106198));
 		cities.put(2660, new City(2660, "Los Cabos", "MEX", 105199));
-		cities.put(2661, new City(2661, "ComitÂ n de DomÂ¡nguez", "MEX",
-				104986));
+		cities.put(2661, new City(2661, "ComitÂ n de DomÂ¡nguez", "MEX", 104986));
 		cities.put(2662, new City(2662, "CunduacÂ n", "MEX", 104164));
 		cities.put(2663, new City(2663, "RÂ¡o Bravo", "MEX", 103901));
 		cities.put(2664, new City(2664, "Temapache", "MEX", 102824));
 		cities.put(2665, new City(2665, "Chilapa de Alvarez", "MEX", 102716));
 		cities.put(2666, new City(2666, "Hidalgo del Parral", "MEX", 100881));
-		cities.put(2667, new City(2667, "San Francisco del RincÂ¢n", "MEX",
-				100149));
+		cities.put(2667, new City(2667, "San Francisco del RincÂ¢n", "MEX", 100149));
 		cities.put(2668, new City(2668, "Taxco de AlarcÂ¢n", "MEX", 99907));
 		cities.put(2669, new City(2669, "Zumpango", "MEX", 99781));
 		cities.put(2670, new City(2670, "San Pedro Cholula", "MEX", 99734));
@@ -3058,8 +2991,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(2956, new City(2956, "Plock", "POL", 131011));
 		cities.put(2957, new City(2957, "Elblag", "POL", 129782));
 		cities.put(2958, new City(2958, "Opole", "POL", 129553));
-		cities.put(2959,
-				new City(2959, "GorzÂ¢w Wielkopolski", "POL", 126019));
+		cities.put(2959, new City(2959, "GorzÂ¢w Wielkopolski", "POL", 126019));
 		cities.put(2960, new City(2960, "Wloclawek", "POL", 123373));
 		cities.put(2961, new City(2961, "ChorzÂ¢w", "POL", 121708));
 		cities.put(2962, new City(2962, "TarnÂ¢w", "POL", 121494));
@@ -3143,8 +3075,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3036, new City(3036, "Satu Mare", "ROM", 130059));
 		cities.put(3037, new City(3037, "Botosani", "ROM", 128730));
 		cities.put(3038, new City(3038, "Piatra Neamt", "ROM", 125070));
-		cities.put(3039,
-				new City(3039, "RÆ’mnicu VÆ’lcea", "ROM", 119741));
+		cities.put(3039, new City(3039, "RÆ’mnicu VÆ’lcea", "ROM", 119741));
 		cities.put(3040, new City(3040, "Suceava", "ROM", 118549));
 		cities.put(3041, new City(3041, "Drobeta-Turnu Severin", "ROM", 117865));
 		cities.put(3042, new City(3042, "TÆ’rgoviste", "ROM", 98980));
@@ -3154,8 +3085,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3046, new City(3046, "Resita", "ROM", 93976));
 		cities.put(3047, new City(3047, "Kigali", "RWA", 286000));
 		cities.put(3048, new City(3048, "Stockholm", "SWE", 750348));
-		cities.put(3049, new City(3049, "Gothenburg [Gâ€�teborg]", "SWE",
-				466990));
+		cities.put(3049, new City(3049, "Gothenburg [Gâ€�teborg]", "SWE", 466990));
 		cities.put(3050, new City(3050, "Malmâ€�", "SWE", 259579));
 		cities.put(3051, new City(3051, "Uppsala", "SWE", 189569));
 		cities.put(3052, new City(3052, "Linkâ€�ping", "SWE", 133168));
@@ -3163,8 +3093,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3054, new City(3054, "â„¢rebro", "SWE", 124207));
 		cities.put(3055, new City(3055, "Norrkâ€�ping", "SWE", 122199));
 		cities.put(3056, new City(3056, "Helsingborg", "SWE", 117737));
-		cities.put(3057, new City(3057, "Jâ€�nkâ€�ping", "SWE",
-				117095));
+		cities.put(3057, new City(3057, "Jâ€�nkâ€�ping", "SWE", 117095));
 		cities.put(3058, new City(3058, "Umeâ€ ", "SWE", 104512));
 		cities.put(3059, new City(3059, "Lund", "SWE", 98948));
 		cities.put(3060, new City(3060, "Borâ€ s", "SWE", 96883));
@@ -3199,8 +3128,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3089, new City(3089, "Karlsruhe", "DEU", 277204));
 		cities.put(3090, new City(3090, "Wiesbaden", "DEU", 268716));
 		cities.put(3091, new City(3091, "MÂ�nster", "DEU", 264670));
-		cities.put(3092,
-				new City(3092, "Mâ€�nchengladbach", "DEU", 263697));
+		cities.put(3092, new City(3092, "Mâ€�nchengladbach", "DEU", 263697));
 		cities.put(3093, new City(3093, "Chemnitz", "DEU", 263222));
 		cities.put(3094, new City(3094, "Augsburg", "DEU", 254867));
 		cities.put(3095, new City(3095, "Halle/Saale", "DEU", 254360));
@@ -3220,8 +3148,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3109, new City(3109, "Mainz", "DEU", 183134));
 		cities.put(3110, new City(3110, "Hamm", "DEU", 181804));
 		cities.put(3111, new City(3111, "Herne", "DEU", 175661));
-		cities.put(3112, new City(3112, "MÂ�lheim an der Ruhr", "DEU",
-				173895));
+		cities.put(3112, new City(3112, "MÂ�lheim an der Ruhr", "DEU", 173895));
 		cities.put(3113, new City(3113, "Solingen", "DEU", 165583));
 		cities.put(3114, new City(3114, "OsnabrÂ�ck", "DEU", 164539));
 		cities.put(3115, new City(3115, "Ludwigshafen am Rhein", "DEU", 163771));
@@ -3331,8 +3258,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3219, new City(3219, "Moratuwa", "LKA", 190000));
 		cities.put(3220, new City(3220, "Jaffna", "LKA", 149000));
 		cities.put(3221, new City(3221, "Kandy", "LKA", 140000));
-		cities.put(3222, new City(3222, "Sri Jayawardenepura Kotte", "LKA",
-				118000));
+		cities.put(3222, new City(3222, "Sri Jayawardenepura Kotte", "LKA", 118000));
 		cities.put(3223, new City(3223, "Negombo", "LKA", 100000));
 		cities.put(3224, new City(3224, "Omdurman", "SDN", 1271403));
 		cities.put(3225, new City(3225, "Khartum", "SDN", 947483));
@@ -3346,8 +3272,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3233, new City(3233, "Kusti", "SDN", 173599));
 		cities.put(3234, new City(3234, "al-Fashir", "SDN", 141884));
 		cities.put(3235, new City(3235, "Juba", "SDN", 114980));
-		cities.put(3236,
-				new City(3236, "Helsinki [Helsingfors]", "FIN", 555474));
+		cities.put(3236, new City(3236, "Helsinki [Helsingfors]", "FIN", 555474));
 		cities.put(3237, new City(3237, "Espoo", "FIN", 213271));
 		cities.put(3238, new City(3238, "Tampere", "FIN", 195468));
 		cities.put(3239, new City(3239, "Vantaa", "FIN", 178471));
@@ -3457,8 +3382,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3343, new City(3343, "Olomouc", "CZE", 102702));
 		cities.put(3344, new City(3344, "Liberec", "CZE", 99155));
 		cities.put(3345, new City(3345, "Ceskâ€š Budejovice", "CZE", 98186));
-		cities.put(3346,
-				new City(3346, "Hradec KrÂ lovâ€š", "CZE", 98080));
+		cities.put(3346, new City(3346, "Hradec KrÂ lovâ€š", "CZE", 98080));
 		cities.put(3347, new City(3347, "Ã©stÂ¡ nad Labem", "CZE", 95491));
 		cities.put(3348, new City(3348, "Pardubice", "CZE", 91309));
 		cities.put(3349, new City(3349, "Tunis", "TUN", 690600));
@@ -3603,8 +3527,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3488, new City(3488, "Gyâ€�r", "HUN", 127119));
 		cities.put(3489, new City(3489, "NyiregyhÂ za", "HUN", 112419));
 		cities.put(3490, new City(3490, "Kecskemâ€št", "HUN", 105606));
-		cities.put(3491, new City(3491, "Szâ€škesfehâ€šrvÂ r", "HUN",
-				105119));
+		cities.put(3491, new City(3491, "Szâ€škesfehâ€šrvÂ r", "HUN", 105119));
 		cities.put(3492, new City(3492, "Montevideo", "URY", 1236000));
 		cities.put(3493, new City(3493, "Noumâ€ša", "NCL", 76293));
 		cities.put(3494, new City(3494, "Auckland", "NZL", 381800));
@@ -3791,8 +3714,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3671, new City(3671, "Zlatoust", "RUS", 196900));
 		cities.put(3672, new City(3672, "Jakutsk", "RUS", 195400));
 		cities.put(3673, new City(3673, "Podolsk", "RUS", 194300));
-		cities.put(3674, new City(3674, "Petropavlovsk-Kamt?atski", "RUS",
-				194100));
+		cities.put(3674, new City(3674, "Petropavlovsk-Kamt?atski", "RUS", 194100));
 		cities.put(3675, new City(3675, "Kamensk-Uralski", "RUS", 190600));
 		cities.put(3676, new City(3676, "Engels", "RUS", 189000));
 		cities.put(3677, new City(3677, "Syzran", "RUS", 186900));
@@ -3999,8 +3921,7 @@ public class InMemoryWorldDao implements WorldDao {
 		cities.put(3878, new City(3878, "Scottsdale", "USA", 202705));
 		cities.put(3879, new City(3879, "Montgomery", "USA", 201568));
 		cities.put(3880, new City(3880, "Shreveport", "USA", 200145));
-		cities.put(3881, new City(3881, "Augusta-Richmond County", "USA",
-				199775));
+		cities.put(3881, new City(3881, "Augusta-Richmond County", "USA", 199775));
 		cities.put(3882, new City(3882, "Lubbock", "USA", 199564));
 		cities.put(3883, new City(3883, "Chesapeake", "USA", 199184));
 		cities.put(3884, new City(3884, "Mobile", "USA", 198915));
@@ -4202,493 +4123,259 @@ public class InMemoryWorldDao implements WorldDao {
 	}
 
 	public void createCountries() {
-		countries.put("ABW", new Country("ABW", "Aruba", "North America",
-				103000, 193.00, 828.00, 129));
-		countries.put("AFG", new Country("AFG", "Afghanistan", "Asia",
-				22720000, 652090.00, 5976.00, 1));
-		countries.put("AGO", new Country("AGO", "Angola", "Africa", 12878000,
-				1246700.00, 6648.00, 56));
-		countries.put("AIA", new Country("AIA", "Anguilla", "North America",
-				8000, 96.00, 63.20, 62));
-		countries.put("ALB", new Country("ALB", "Albania", "Europe", 3401200,
-				28748.00, 3205.00, 34));
-		countries.put("AND", new Country("AND", "Andorra", "Europe", 78000,
-				468.00, 1630.00, 55));
-		countries.put("ANT", new Country("ANT", "Netherlands Antilles",
-				"North America", 217000, 800.00, 1941.00, 33));
-		countries.put("ARE", new Country("ARE", "United Arab Emirates", "Asia",
-				2441000, 83600.00, 37966.00, 65));
-		countries.put("ARG", new Country("ARG", "Argentina", "South America",
-				37032000, 2780400.00, 340238.00, 69));
-		countries.put("ARM", new Country("ARM", "Armenia", "Asia", 3520000,
-				29800.00, 1813.00, 126));
-		countries.put("ASM", new Country("ASM", "American Samoa", "Oceania",
-				68000, 199.00, 334.00, 54));
-		countries.put("ATA", new Country("ATA", "Antarctica", "Antarctica", 0,
-				13120000.00, 0.00, -1));
-		countries.put("ATF", new Country("ATF", "French Southern territories",
-				"Antarctica", 0, 7780.00, 0.00, -1));
-		countries.put("ATG", new Country("ATG", "Antigua and Barbuda",
-				"North America", 68000, 442.00, 612.00, 63));
-		countries.put("AUS", new Country("AUS", "Australia", "Oceania",
-				18886000, 7741220.00, 351182.00, 135));
-		countries.put("AUT", new Country("AUT", "Austria", "Europe", 8091800,
-				83859.00, 211860.00, 1523));
-		countries.put("AZE", new Country("AZE", "Azerbaijan", "Asia", 7734000,
-				86600.00, 4127.00, 144));
-		countries.put("BDI", new Country("BDI", "Burundi", "Africa", 6695000,
-				27834.00, 903.00, 552));
-		countries.put("BEL", new Country("BEL", "Belgium", "Europe", 10239000,
-				30518.00, 249704.00, 179));
-		countries.put("BEN", new Country("BEN", "Benin", "Africa", 6097000,
-				112622.00, 2357.00, 187));
-		countries.put("BFA", new Country("BFA", "Burkina Faso", "Africa",
-				11937000, 274000.00, 2425.00, 549));
-		countries.put("BGD", new Country("BGD", "Bangladesh", "Asia",
-				129155000, 143998.00, 32852.00, 150));
-		countries.put("BGR", new Country("BGR", "Bulgaria", "Europe", 8190900,
-				110994.00, 12178.00, 539));
-		countries.put("BHR", new Country("BHR", "Bahrain", "Asia", 617000,
-				694.00, 6366.00, 149));
-		countries.put("BHS", new Country("BHS", "Bahamas", "North America",
-				307000, 13878.00, 3527.00, 148));
-		countries.put("BIH", new Country("BIH", "Bosnia and Herzegovina",
-				"Europe", 3972000, 51197.00, 2841.00, 201));
-		countries.put("BLR", new Country("BLR", "Belarus", "Europe", 10236000,
-				207600.00, 13714.00, 3520));
-		countries.put("BLZ", new Country("BLZ", "Belize", "North America",
-				241000, 22696.00, 630.00, 185));
-		countries.put("BMU", new Country("BMU", "Bermuda", "North America",
-				65000, 53.00, 2328.00, 191));
-		countries.put("BOL", new Country("BOL", "Bolivia", "South America",
-				8329000, 1098581.00, 8571.00, 194));
-		countries.put("BRA", new Country("BRA", "Brazil", "South America",
-				170115000, 8547403.00, 776739.00, 211));
-		countries.put("BRB", new Country("BRB", "Barbados", "North America",
-				270000, 430.00, 2223.00, 174));
-		countries.put("BRN", new Country("BRN", "Brunei", "Asia", 328000,
-				5765.00, 11705.00, 538));
-		countries.put("BTN", new Country("BTN", "Bhutan", "Asia", 2124000,
-				47000.00, 372.00, 192));
-		countries.put("BVT", new Country("BVT", "Bouvet Island", "Antarctica",
-				0, 59.00, 0.00, -1));
-		countries.put("BWA", new Country("BWA", "Botswana", "Africa", 1622000,
-				581730.00, 4834.00, 204));
-		countries.put("CAF", new Country("CAF", "Central African Republic",
-				"Africa", 3615000, 622984.00, 1054.00, 1889));
-		countries.put("CAN", new Country("CAN", "Canada", "North America",
-				31147000, 9970610.00, 598862.00, 1822));
-		countries.put("CCK", new Country("CCK", "Cocos (Keeling) Islands",
-				"Oceania", 600, 14.00, 0.00, 2317));
-		countries.put("CHE", new Country("CHE", "Switzerland", "Europe",
-				7160400, 41284.00, 264478.00, 3248));
-		countries.put("CHL", new Country("CHL", "Chile", "South America",
-				15211000, 756626.00, 72949.00, 554));
-		countries.put("CHN", new Country("CHN", "China", "Asia", 1277558000,
-				9572900.00, 982268.00, 1891));
-		countries.put("CIV", new Country("CIV", "Câ€œte d?Ivoire",
-				"Africa", 14786000, 322463.00, 11345.00, 2814));
-		countries.put("CMR", new Country("CMR", "Cameroon", "Africa", 15085000,
-				475442.00, 9174.00, 1804));
-		countries.put("COD", new Country("COD",
-				"Congo, The Democratic Republic of the", "Africa", 51654000,
-				2344858.00, 6964.00, 2298));
-		countries.put("COG", new Country("COG", "Congo", "Africa", 2943000,
-				342000.00, 2108.00, 2296));
-		countries.put("COK", new Country("COK", "Cook Islands", "Oceania",
-				20000, 236.00, 100.00, 583));
-		countries.put("COL", new Country("COL", "Colombia", "South America",
-				42321000, 1138914.00, 102896.00, 2257));
-		countries.put("COM", new Country("COM", "Comoros", "Africa", 578000,
-				1862.00, 4401.00, 2295));
-		countries.put("CPV", new Country("CPV", "Cape Verde", "Africa", 428000,
-				4033.00, 435.00, 1859));
-		countries.put("CRI", new Country("CRI", "Costa Rica", "North America",
-				4023000, 51100.00, 10226.00, 584));
-		countries.put("CUB", new Country("CUB", "Cuba", "North America",
-				11201000, 110861.00, 17843.00, 2413));
-		countries.put("CXR", new Country("CXR", "Christmas Island", "Oceania",
-				2500, 135.00, 0.00, 1791));
-		countries.put("CYM", new Country("CYM", "Cayman Islands",
-				"North America", 38000, 264.00, 1263.00, 553));
-		countries.put("CYP", new Country("CYP", "Cyprus", "Asia", 754700,
-				9251.00, 9333.00, 2430));
-		countries.put("CZE", new Country("CZE", "Czech Republic", "Europe",
-				10278100, 78866.00, 55017.00, 3339));
-		countries.put("DEU", new Country("DEU", "Germany", "Europe", 82164700,
-				357022.00, 2133367.00, 3068));
-		countries.put("DJI", new Country("DJI", "Djibouti", "Africa", 638000,
-				23200.00, 382.00, 585));
-		countries.put("DMA", new Country("DMA", "Dominica", "North America",
-				71000, 751.00, 256.00, 586));
-		countries.put("DNK", new Country("DNK", "Denmark", "Europe", 5330000,
-				43094.00, 174099.00, 3315));
-		countries.put("DOM", new Country("DOM", "Dominican Republic",
-				"North America", 8495000, 48511.00, 15846.00, 587));
-		countries.put("DZA", new Country("DZA", "Algeria", "Africa", 31471000,
-				2381741.00, 49982.00, 35));
-		countries.put("ECU", new Country("ECU", "Ecuador", "South America",
-				12646000, 283561.00, 19770.00, 594));
-		countries.put("EGY", new Country("EGY", "Egypt", "Africa", 68470000,
-				1001449.00, 82710.00, 608));
-		countries.put("ERI", new Country("ERI", "Eritrea", "Africa", 3850000,
-				117600.00, 650.00, 652));
-		countries.put("ESH", new Country("ESH", "Western Sahara", "Africa",
-				293000, 266000.00, 60.00, 2453));
-		countries.put("ESP", new Country("ESP", "Spain", "Europe", 39441700,
-				505992.00, 553233.00, 653));
-		countries.put("EST", new Country("EST", "Estonia", "Europe", 1439200,
-				45227.00, 5328.00, 3791));
-		countries.put("ETH", new Country("ETH", "Ethiopia", "Africa", 62565000,
-				1104300.00, 6353.00, 756));
-		countries.put("FIN", new Country("FIN", "Finland", "Europe", 5171300,
-				338145.00, 121914.00, 3236));
-		countries.put("FJI", new Country("FJI", "Fiji Islands", "Oceania",
-				817000, 18274.00, 1536.00, 764));
-		countries.put("FLK", new Country("FLK", "Falkland Islands",
-				"South America", 2000, 12173.00, 0.00, 763));
-		countries.put("FRA", new Country("FRA", "France", "Europe", 59225700,
-				551500.00, 1424285.00, 2974));
-		countries.put("FRO", new Country("FRO", "Faroe Islands", "Europe",
-				43000, 1399.00, 0.00, 901));
-		countries.put("FSM", new Country("FSM",
-				"Micronesia, Federated States of", "Oceania", 119000, 702.00,
-				212.00, 2689));
-		countries.put("GAB", new Country("GAB", "Gabon", "Africa", 1226000,
-				267668.00, 5493.00, 902));
-		countries.put("GBR", new Country("GBR", "United Kingdom", "Europe",
-				59623400, 242900.00, 1378330.00, 456));
-		countries.put("GEO", new Country("GEO", "Georgia", "Asia", 4968000,
-				69700.00, 6064.00, 905));
-		countries.put("GHA", new Country("GHA", "Ghana", "Africa", 20212000,
-				238533.00, 7137.00, 910));
-		countries.put("GIB", new Country("GIB", "Gibraltar", "Europe", 25000,
-				6.00, 258.00, 915));
-		countries.put("GIN", new Country("GIN", "Guinea", "Africa", 7430000,
-				245857.00, 2352.00, 926));
-		countries.put("GLP", new Country("GLP", "Guadeloupe", "North America",
-				456000, 1705.00, 3501.00, 919));
-		countries.put("GMB", new Country("GMB", "Gambia", "Africa", 1305000,
-				11295.00, 320.00, 904));
-		countries.put("GNB", new Country("GNB", "Guinea-Bissau", "Africa",
-				1213000, 36125.00, 293.00, 927));
-		countries.put("GNQ", new Country("GNQ", "Equatorial Guinea", "Africa",
-				453000, 28051.00, 283.00, 2972));
-		countries.put("GRC", new Country("GRC", "Greece", "Europe", 10545700,
-				131626.00, 120724.00, 2401));
-		countries.put("GRD", new Country("GRD", "Grenada", "North America",
-				94000, 344.00, 318.00, 916));
-		countries.put("GRL", new Country("GRL", "Greenland", "North America",
-				56000, 2166090.00, 0.00, 917));
-		countries.put("GTM", new Country("GTM", "Guatemala", "North America",
-				11385000, 108889.00, 19008.00, 922));
-		countries.put("GUF", new Country("GUF", "French Guiana",
-				"South America", 181000, 90000.00, 681.00, 3014));
-		countries.put("GUM", new Country("GUM", "Guam", "Oceania", 168000,
-				549.00, 1197.00, 921));
-		countries.put("GUY", new Country("GUY", "Guyana", "South America",
-				861000, 214969.00, 722.00, 928));
-		countries.put("HKG", new Country("HKG", "Hong Kong", "Asia", 6782000,
-				1075.00, 166448.00, 937));
-		countries.put("HMD", new Country("HMD",
-				"Heard Island and McDonald Islands", "Antarctica", 0, 359.00,
-				0.00, -1));
-		countries.put("HND", new Country("HND", "Honduras", "North America",
-				6485000, 112088.00, 5333.00, 933));
-		countries.put("HRV", new Country("HRV", "Croatia", "Europe", 4473000,
-				56538.00, 20208.00, 2409));
-		countries.put("HTI", new Country("HTI", "Haiti", "North America",
-				8222000, 27750.00, 3459.00, 929));
-		countries.put("HUN", new Country("HUN", "Hungary", "Europe", 10043200,
-				93030.00, 48267.00, 3483));
-		countries.put("IDN", new Country("IDN", "Indonesia", "Asia", 212107000,
-				1904569.00, 84982.00, 939));
-		countries.put("IND", new Country("IND", "India", "Asia", 1013662000,
-				3287263.00, 447114.00, 1109));
-		countries
-				.put("IOT", new Country("IOT",
-						"British Indian Ocean Territory", "Africa", 0, 78.00,
-						0.00, -1));
-		countries.put("IRL", new Country("IRL", "Ireland", "Europe", 3775100,
-				70273.00, 75921.00, 1447));
-		countries.put("IRN", new Country("IRN", "Iran", "Asia", 67702000,
-				1648195.00, 195746.00, 1380));
-		countries.put("IRQ", new Country("IRQ", "Iraq", "Asia", 23115000,
-				438317.00, 11500.00, 1365));
-		countries.put("ISL", new Country("ISL", "Iceland", "Europe", 279000,
-				103000.00, 8255.00, 1449));
-		countries.put("ISR", new Country("ISR", "Israel", "Asia", 6217000,
-				21056.00, 97477.00, 1450));
-		countries.put("ITA", new Country("ITA", "Italy", "Europe", 57680000,
-				301316.00, 1161755.00, 1464));
-		countries.put("JAM", new Country("JAM", "Jamaica", "North America",
-				2583000, 10990.00, 6871.00, 1530));
-		countries.put("JOR", new Country("JOR", "Jordan", "Asia", 5083000,
-				88946.00, 7526.00, 1786));
-		countries.put("JPN", new Country("JPN", "Japan", "Asia", 126714000,
-				377829.00, 3787042.00, 1532));
-		countries.put("KAZ", new Country("KAZ", "Kazakstan", "Asia", 16223000,
-				2724900.00, 24375.00, 1864));
-		countries.put("KEN", new Country("KEN", "Kenya", "Africa", 30080000,
-				580367.00, 9217.00, 1881));
-		countries.put("KGZ", new Country("KGZ", "Kyrgyzstan", "Asia", 4699000,
-				199900.00, 1626.00, 2253));
-		countries.put("KHM", new Country("KHM", "Cambodia", "Asia", 11168000,
-				181035.00, 5121.00, 1800));
-		countries.put("KIR", new Country("KIR", "Kiribati", "Oceania", 83000,
-				726.00, 40.70, 2256));
-		countries.put("KNA", new Country("KNA", "Saint Kitts and Nevis",
-				"North America", 38000, 261.00, 299.00, 3064));
-		countries.put("KOR", new Country("KOR", "South Korea", "Asia",
-				46844000, 99434.00, 320749.00, 2331));
-		countries.put("KWT", new Country("KWT", "Kuwait", "Asia", 1972000,
-				17818.00, 27037.00, 2429));
-		countries.put("LAO", new Country("LAO", "Laos", "Asia", 5433000,
-				236800.00, 1292.00, 2432));
-		countries.put("LBN", new Country("LBN", "Lebanon", "Asia", 3282000,
-				10400.00, 17121.00, 2438));
-		countries.put("LBR", new Country("LBR", "Liberia", "Africa", 3154000,
-				111369.00, 2012.00, 2440));
-		countries.put("LBY", new Country("LBY", "Libyan Arab Jamahiriya",
-				"Africa", 5605000, 1759540.00, 44806.00, 2441));
-		countries.put("LCA", new Country("LCA", "Saint Lucia", "North America",
-				154000, 622.00, 571.00, 3065));
-		countries.put("LIE", new Country("LIE", "Liechtenstein", "Europe",
-				32300, 160.00, 1119.00, 2446));
-		countries.put("LKA", new Country("LKA", "Sri Lanka", "Asia", 18827000,
-				65610.00, 15706.00, 3217));
-		countries.put("LSO", new Country("LSO", "Lesotho", "Africa", 2153000,
-				30355.00, 1061.00, 2437));
-		countries.put("LTU", new Country("LTU", "Lithuania", "Europe", 3698500,
-				65301.00, 10692.00, 2447));
-		countries.put("LUX", new Country("LUX", "Luxembourg", "Europe", 435700,
-				2586.00, 16321.00, 2452));
-		countries.put("LVA", new Country("LVA", "Latvia", "Europe", 2424200,
-				64589.00, 6398.00, 2434));
-		countries.put("MAC", new Country("MAC", "Macao", "Asia", 473000, 18.00,
-				5749.00, 2454));
-		countries.put("MAR", new Country("MAR", "Morocco", "Africa", 28351000,
-				446550.00, 36124.00, 2486));
-		countries.put("MCO", new Country("MCO", "Monaco", "Europe", 34000,
-				1.50, 776.00, 2695));
-		countries.put("MDA", new Country("MDA", "Moldova", "Europe", 4380000,
-				33851.00, 1579.00, 2690));
-		countries.put("MDG", new Country("MDG", "Madagascar", "Africa",
-				15942000, 587041.00, 3750.00, 2455));
-		countries.put("MDV", new Country("MDV", "Maldives", "Asia", 286000,
-				298.00, 199.00, 2463));
-		countries.put("MEX", new Country("MEX", "Mexico", "North America",
-				98881000, 1958201.00, 414972.00, 2515));
-		countries.put("MHL", new Country("MHL", "Marshall Islands", "Oceania",
-				64000, 181.00, 97.00, 2507));
-		countries.put("MKD", new Country("MKD", "Macedonia", "Europe", 2024000,
-				25713.00, 1694.00, 2460));
-		countries.put("MLI", new Country("MLI", "Mali", "Africa", 11234000,
-				1240192.00, 2642.00, 2482));
-		countries.put("MLT", new Country("MLT", "Malta", "Europe", 380200,
-				316.00, 3512.00, 2484));
-		countries.put("MMR", new Country("MMR", "Myanmar", "Asia", 45611000,
-				676578.00, 180375.00, 2710));
-		countries.put("MNG", new Country("MNG", "Mongolia", "Asia", 2662000,
-				1566500.00, 1043.00, 2696));
-		countries.put("MNP", new Country("MNP", "Northern Mariana Islands",
-				"Oceania", 78000, 464.00, 0.00, 2913));
-		countries.put("MOZ", new Country("MOZ", "Mozambique", "Africa",
-				19680000, 801590.00, 2891.00, 2698));
-		countries.put("MRT", new Country("MRT", "Mauritania", "Africa",
-				2670000, 1025520.00, 998.00, 2509));
-		countries.put("MSR", new Country("MSR", "Montserrat", "North America",
-				11000, 102.00, 109.00, 2697));
-		countries.put("MTQ", new Country("MTQ", "Martinique", "North America",
-				395000, 1102.00, 2731.00, 2508));
-		countries.put("MUS", new Country("MUS", "Mauritius", "Africa", 1158000,
-				2040.00, 4251.00, 2511));
-		countries.put("MWI", new Country("MWI", "Malawi", "Africa", 10925000,
-				118484.00, 1687.00, 2462));
-		countries.put("MYS", new Country("MYS", "Malaysia", "Asia", 22244000,
-				329758.00, 69213.00, 2464));
-		countries.put("MYT", new Country("MYT", "Mayotte", "Africa", 149000,
-				373.00, 0.00, 2514));
-		countries.put("NAM", new Country("NAM", "Namibia", "Africa", 1726000,
-				824292.00, 3101.00, 2726));
-		countries.put("NCL", new Country("NCL", "New Caledonia", "Oceania",
-				214000, 18575.00, 3563.00, 3493));
-		countries.put("NER", new Country("NER", "Niger", "Africa", 10730000,
-				1267000.00, 1706.00, 2738));
-		countries.put("NFK", new Country("NFK", "Norfolk Island", "Oceania",
-				2000, 36.00, 0.00, 2806));
-		countries.put("NGA", new Country("NGA", "Nigeria", "Africa", 111506000,
-				923768.00, 65707.00, 2754));
-		countries.put("NIC", new Country("NIC", "Nicaragua", "North America",
-				5074000, 130000.00, 1988.00, 2734));
-		countries.put("NIU", new Country("NIU", "Niue", "Oceania", 2000,
-				260.00, 0.00, 2805));
-		countries.put("NLD", new Country("NLD", "Netherlands", "Europe",
-				15864000, 41526.00, 371362.00, 5));
-		countries.put("NOR", new Country("NOR", "Norway", "Europe", 4478500,
-				323877.00, 145895.00, 2807));
-		countries.put("NPL", new Country("NPL", "Nepal", "Asia", 23930000,
-				147181.00, 4768.00, 2729));
-		countries.put("NRU", new Country("NRU", "Nauru", "Oceania", 12000,
-				21.00, 197.00, 2728));
-		countries.put("NZL", new Country("NZL", "New Zealand", "Oceania",
-				3862000, 270534.00, 54669.00, 3499));
-		countries.put("OMN", new Country("OMN", "Oman", "Asia", 2542000,
-				309500.00, 16904.00, 2821));
-		countries.put("PAK", new Country("PAK", "Pakistan", "Asia", 156483000,
-				796095.00, 61289.00, 2831));
-		countries.put("PAN", new Country("PAN", "Panama", "North America",
-				2856000, 75517.00, 9131.00, 2882));
-		countries.put("PCN", new Country("PCN", "Pitcairn", "Oceania", 50,
-				49.00, 0.00, 2912));
-		countries.put("PER", new Country("PER", "Peru", "South America",
-				25662000, 1285216.00, 64140.00, 2890));
-		countries.put("PHL", new Country("PHL", "Philippines", "Asia",
-				75967000, 300000.00, 65107.00, 766));
-		countries.put("PLW", new Country("PLW", "Palau", "Oceania", 19000,
-				459.00, 105.00, 2881));
-		countries.put("PNG", new Country("PNG", "Papua New Guinea", "Oceania",
-				4807000, 462840.00, 4988.00, 2884));
-		countries.put("POL", new Country("POL", "Poland", "Europe", 38653600,
-				323250.00, 151697.00, 2928));
-		countries.put("PRI", new Country("PRI", "Puerto Rico", "North America",
-				3869000, 8875.00, 34100.00, 2919));
-		countries.put("PRK", new Country("PRK", "North Korea", "Asia",
-				24039000, 120538.00, 5332.00, 2318));
-		countries.put("PRT", new Country("PRT", "Portugal", "Europe", 9997600,
-				91982.00, 105954.00, 2914));
-		countries.put("PRY", new Country("PRY", "Paraguay", "South America",
-				5496000, 406752.00, 8444.00, 2885));
-		countries.put("PSE", new Country("PSE", "Palestine", "Asia", 3101000,
-				6257.00, 4173.00, 4074));
-		countries.put("PYF", new Country("PYF", "French Polynesia", "Oceania",
-				235000, 4000.00, 818.00, 3016));
-		countries.put("QAT", new Country("QAT", "Qatar", "Asia", 599000,
-				11000.00, 9472.00, 2973));
-		countries.put("REU", new Country("REU", "Râ€šunion", "Africa",
-				699000, 2510.00, 8287.00, 3017));
-		countries.put("ROM", new Country("ROM", "Romania", "Europe", 22455500,
-				238391.00, 38158.00, 3018));
-		countries.put("RUS", new Country("RUS", "Russian Federation", "Europe",
-				146934000, 17075400.00, 276608.00, 3580));
-		countries.put("RWA", new Country("RWA", "Rwanda", "Africa", 7733000,
-				26338.00, 2036.00, 3047));
-		countries.put("SAU", new Country("SAU", "Saudi Arabia", "Asia",
-				21607000, 2149690.00, 137635.00, 3173));
-		countries.put("SDN", new Country("SDN", "Sudan", "Africa", 29490000,
-				2505813.00, 10162.00, 3225));
-		countries.put("SEN", new Country("SEN", "Senegal", "Africa", 9481000,
-				196722.00, 4787.00, 3198));
-		countries.put("SGP", new Country("SGP", "Singapore", "Asia", 3567000,
-				618.00, 86503.00, 3208));
-		countries.put("SGS", new Country("SGS",
-				"South Georgia and the South Sandwich Islands", "Antarctica",
-				0, 3903.00, 0.00, -1));
-		countries.put("SHN", new Country("SHN", "Saint Helena", "Africa", 6000,
-				314.00, 0.00, 3063));
-		countries.put("SJM", new Country("SJM", "Svalbard and Jan Mayen",
-				"Europe", 3200, 62422.00, 0.00, 938));
-		countries.put("SLB", new Country("SLB", "Solomon Islands", "Oceania",
-				444000, 28896.00, 182.00, 3161));
-		countries.put("SLE", new Country("SLE", "Sierra Leone", "Africa",
-				4854000, 71740.00, 746.00, 3207));
-		countries.put("SLV", new Country("SLV", "El Salvador", "North America",
-				6276000, 21041.00, 11863.00, 645));
-		countries.put("SMR", new Country("SMR", "San Marino", "Europe", 27000,
-				61.00, 510.00, 3171));
-		countries.put("SOM", new Country("SOM", "Somalia", "Africa", 10097000,
-				637657.00, 935.00, 3214));
-		countries.put("SPM", new Country("SPM", "Saint Pierre and Miquelon",
-				"North America", 7000, 242.00, 0.00, 3067));
-		countries.put("STP", new Country("STP", "Sao Tome and Principe",
-				"Africa", 147000, 964.00, 6.00, 3172));
-		countries.put("SUR", new Country("SUR", "Suriname", "South America",
-				417000, 163265.00, 870.00, 3243));
-		countries.put("SVK", new Country("SVK", "Slovakia", "Europe", 5398700,
-				49012.00, 20594.00, 3209));
-		countries.put("SVN", new Country("SVN", "Slovenia", "Europe", 1987800,
-				20256.00, 19756.00, 3212));
-		countries.put("SWE", new Country("SWE", "Sweden", "Europe", 8861400,
-				449964.00, 226492.00, 3048));
-		countries.put("SWZ", new Country("SWZ", "Swaziland", "Africa", 1008000,
-				17364.00, 1206.00, 3244));
-		countries.put("SYC", new Country("SYC", "Seychelles", "Africa", 77000,
-				455.00, 536.00, 3206));
-		countries.put("SYR", new Country("SYR", "Syria", "Asia", 16125000,
-				185180.00, 65984.00, 3250));
-		countries.put("TCA", new Country("TCA", "Turks and Caicos Islands",
-				"North America", 17000, 430.00, 96.00, 3423));
-		countries.put("TCD", new Country("TCD", "Chad", "Africa", 7651000,
-				1284000.00, 1208.00, 3337));
-		countries.put("TGO", new Country("TGO", "Togo", "Africa", 4629000,
-				56785.00, 1449.00, 3332));
-		countries.put("THA", new Country("THA", "Thailand", "Asia", 61399000,
-				513115.00, 116416.00, 3320));
-		countries.put("TJK", new Country("TJK", "Tajikistan", "Asia", 6188000,
-				143100.00, 1990.00, 3261));
-		countries.put("TKL", new Country("TKL", "Tokelau", "Oceania", 2000,
-				12.00, 0.00, 3333));
-		countries.put("TKM", new Country("TKM", "Turkmenistan", "Asia",
-				4459000, 488100.00, 4397.00, 3419));
-		countries.put("TMP", new Country("TMP", "East Timor", "Asia", 885000,
-				14874.00, 0.00, 1522));
-		countries.put("TON", new Country("TON", "Tonga", "Oceania", 99000,
-				650.00, 146.00, 3334));
-		countries.put("TTO", new Country("TTO", "Trinidad and Tobago",
-				"North America", 1295000, 5130.00, 6232.00, 3336));
-		countries.put("TUN", new Country("TUN", "Tunisia", "Africa", 9586000,
-				163610.00, 20026.00, 3349));
-		countries.put("TUR", new Country("TUR", "Turkey", "Asia", 66591000,
-				774815.00, 210721.00, 3358));
-		countries.put("TUV", new Country("TUV", "Tuvalu", "Oceania", 12000,
-				26.00, 6.00, 3424));
-		countries.put("TWN", new Country("TWN", "Taiwan", "Asia", 22256000,
-				36188.00, 256254.00, 3263));
-		countries.put("TZA", new Country("TZA", "Tanzania", "Africa", 33517000,
-				883749.00, 8005.00, 3306));
-		countries.put("UGA", new Country("UGA", "Uganda", "Africa", 21778000,
-				241038.00, 6313.00, 3425));
-		countries.put("UKR", new Country("UKR", "Ukraine", "Europe", 50456000,
-				603700.00, 42168.00, 3426));
-		countries.put("UMI", new Country("UMI",
-				"United States Minor Outlying Islands", "Oceania", 0, 16.00,
-				0.00, -1));
-		countries.put("URY", new Country("URY", "Uruguay", "South America",
-				3337000, 175016.00, 20831.00, 3492));
-		countries.put("USA", new Country("USA", "United States",
-				"North America", 278357000, 9363520.00, 8510700.00, 3813));
-		countries.put("UZB", new Country("UZB", "Uzbekistan", "Asia", 24318000,
-				447400.00, 14194.00, 3503));
-		countries.put("VAT", new Country("VAT",
-				"Holy See (Vatican City State)", "Europe", 1000, 0.40, 9.00,
-				3538));
-		countries.put("VCT", new Country("VCT",
-				"Saint Vincent and the Grenadines", "North America", 114000,
-				388.00, 285.00, 3066));
-		countries.put("VEN", new Country("VEN", "Venezuela", "South America",
-				24170000, 912050.00, 95023.00, 3539));
-		countries.put("VGB", new Country("VGB", "Virgin Islands, British",
-				"North America", 21000, 151.00, 612.00, 537));
-		countries.put("VIR", new Country("VIR", "Virgin Islands, U.S.",
-				"North America", 93000, 347.00, 0.00, 4067));
-		countries.put("VNM", new Country("VNM", "Vietnam", "Asia", 79832000,
-				331689.00, 21929.00, 3770));
-		countries.put("VUT", new Country("VUT", "Vanuatu", "Oceania", 190000,
-				12189.00, 261.00, 3537));
-		countries.put("WLF", new Country("WLF", "Wallis and Futuna", "Oceania",
-				15000, 200.00, 0.00, 3536));
-		countries.put("WSM", new Country("WSM", "Samoa", "Oceania", 180000,
-				2831.00, 141.00, 3169));
-		countries.put("YEM", new Country("YEM", "Yemen", "Asia", 18112000,
-				527968.00, 6041.00, 1780));
-		countries.put("YUG", new Country("YUG", "Yugoslavia", "Europe",
-				10640000, 102173.00, 17000.00, 1792));
-		countries.put("ZAF", new Country("ZAF", "South Africa", "Africa",
-				40377000, 1221037.00, 116729.00, 716));
-		countries.put("ZMB", new Country("ZMB", "Zambia", "Africa", 9169000,
-				752618.00, 3377.00, 3162));
-		countries.put("ZWE", new Country("ZWE", "Zimbabwe", "Africa", 11669000,
-				390757.00, 5951.00, 4068));
+		countries.put("ABW", new Country("ABW", "Aruba", "North America", 103000, 193.00, 828.00, 129));
+		countries.put("AFG", new Country("AFG", "Afghanistan", "Asia", 22720000, 652090.00, 5976.00, 1));
+		countries.put("AGO", new Country("AGO", "Angola", "Africa", 12878000, 1246700.00, 6648.00, 56));
+		countries.put("AIA", new Country("AIA", "Anguilla", "North America", 8000, 96.00, 63.20, 62));
+		countries.put("ALB", new Country("ALB", "Albania", "Europe", 3401200, 28748.00, 3205.00, 34));
+		countries.put("AND", new Country("AND", "Andorra", "Europe", 78000, 468.00, 1630.00, 55));
+		countries.put("ANT", new Country("ANT", "Netherlands Antilles", "North America", 217000, 800.00, 1941.00, 33));
+		countries.put("ARE", new Country("ARE", "United Arab Emirates", "Asia", 2441000, 83600.00, 37966.00, 65));
+		countries.put("ARG", new Country("ARG", "Argentina", "South America", 37032000, 2780400.00, 340238.00, 69));
+		countries.put("ARM", new Country("ARM", "Armenia", "Asia", 3520000, 29800.00, 1813.00, 126));
+		countries.put("ASM", new Country("ASM", "American Samoa", "Oceania", 68000, 199.00, 334.00, 54));
+		countries.put("ATA", new Country("ATA", "Antarctica", "Antarctica", 0, 13120000.00, 0.00, -1));
+		countries.put("ATF", new Country("ATF", "French Southern territories", "Antarctica", 0, 7780.00, 0.00, -1));
+		countries.put("ATG", new Country("ATG", "Antigua and Barbuda", "North America", 68000, 442.00, 612.00, 63));
+		countries.put("AUS", new Country("AUS", "Australia", "Oceania", 18886000, 7741220.00, 351182.00, 135));
+		countries.put("AUT", new Country("AUT", "Austria", "Europe", 8091800, 83859.00, 211860.00, 1523));
+		countries.put("AZE", new Country("AZE", "Azerbaijan", "Asia", 7734000, 86600.00, 4127.00, 144));
+		countries.put("BDI", new Country("BDI", "Burundi", "Africa", 6695000, 27834.00, 903.00, 552));
+		countries.put("BEL", new Country("BEL", "Belgium", "Europe", 10239000, 30518.00, 249704.00, 179));
+		countries.put("BEN", new Country("BEN", "Benin", "Africa", 6097000, 112622.00, 2357.00, 187));
+		countries.put("BFA", new Country("BFA", "Burkina Faso", "Africa", 11937000, 274000.00, 2425.00, 549));
+		countries.put("BGD", new Country("BGD", "Bangladesh", "Asia", 129155000, 143998.00, 32852.00, 150));
+		countries.put("BGR", new Country("BGR", "Bulgaria", "Europe", 8190900, 110994.00, 12178.00, 539));
+		countries.put("BHR", new Country("BHR", "Bahrain", "Asia", 617000, 694.00, 6366.00, 149));
+		countries.put("BHS", new Country("BHS", "Bahamas", "North America", 307000, 13878.00, 3527.00, 148));
+		countries.put("BIH", new Country("BIH", "Bosnia and Herzegovina", "Europe", 3972000, 51197.00, 2841.00, 201));
+		countries.put("BLR", new Country("BLR", "Belarus", "Europe", 10236000, 207600.00, 13714.00, 3520));
+		countries.put("BLZ", new Country("BLZ", "Belize", "North America", 241000, 22696.00, 630.00, 185));
+		countries.put("BMU", new Country("BMU", "Bermuda", "North America", 65000, 53.00, 2328.00, 191));
+		countries.put("BOL", new Country("BOL", "Bolivia", "South America", 8329000, 1098581.00, 8571.00, 194));
+		countries.put("BRA", new Country("BRA", "Brazil", "South America", 170115000, 8547403.00, 776739.00, 211));
+		countries.put("BRB", new Country("BRB", "Barbados", "North America", 270000, 430.00, 2223.00, 174));
+		countries.put("BRN", new Country("BRN", "Brunei", "Asia", 328000, 5765.00, 11705.00, 538));
+		countries.put("BTN", new Country("BTN", "Bhutan", "Asia", 2124000, 47000.00, 372.00, 192));
+		countries.put("BVT", new Country("BVT", "Bouvet Island", "Antarctica", 0, 59.00, 0.00, -1));
+		countries.put("BWA", new Country("BWA", "Botswana", "Africa", 1622000, 581730.00, 4834.00, 204));
+		countries.put("CAF",
+				new Country("CAF", "Central African Republic", "Africa", 3615000, 622984.00, 1054.00, 1889));
+		countries.put("CAN", new Country("CAN", "Canada", "North America", 31147000, 9970610.00, 598862.00, 1822));
+		countries.put("CCK", new Country("CCK", "Cocos (Keeling) Islands", "Oceania", 600, 14.00, 0.00, 2317));
+		countries.put("CHE", new Country("CHE", "Switzerland", "Europe", 7160400, 41284.00, 264478.00, 3248));
+		countries.put("CHL", new Country("CHL", "Chile", "South America", 15211000, 756626.00, 72949.00, 554));
+		countries.put("CHN", new Country("CHN", "China", "Asia", 1277558000, 9572900.00, 982268.00, 1891));
+		countries.put("CIV", new Country("CIV", "Câ€œte d?Ivoire", "Africa", 14786000, 322463.00, 11345.00, 2814));
+		countries.put("CMR", new Country("CMR", "Cameroon", "Africa", 15085000, 475442.00, 9174.00, 1804));
+		countries.put("COD", new Country("COD", "Congo, The Democratic Republic of the", "Africa", 51654000, 2344858.00,
+				6964.00, 2298));
+		countries.put("COG", new Country("COG", "Congo", "Africa", 2943000, 342000.00, 2108.00, 2296));
+		countries.put("COK", new Country("COK", "Cook Islands", "Oceania", 20000, 236.00, 100.00, 583));
+		countries.put("COL", new Country("COL", "Colombia", "South America", 42321000, 1138914.00, 102896.00, 2257));
+		countries.put("COM", new Country("COM", "Comoros", "Africa", 578000, 1862.00, 4401.00, 2295));
+		countries.put("CPV", new Country("CPV", "Cape Verde", "Africa", 428000, 4033.00, 435.00, 1859));
+		countries.put("CRI", new Country("CRI", "Costa Rica", "North America", 4023000, 51100.00, 10226.00, 584));
+		countries.put("CUB", new Country("CUB", "Cuba", "North America", 11201000, 110861.00, 17843.00, 2413));
+		countries.put("CXR", new Country("CXR", "Christmas Island", "Oceania", 2500, 135.00, 0.00, 1791));
+		countries.put("CYM", new Country("CYM", "Cayman Islands", "North America", 38000, 264.00, 1263.00, 553));
+		countries.put("CYP", new Country("CYP", "Cyprus", "Asia", 754700, 9251.00, 9333.00, 2430));
+		countries.put("CZE", new Country("CZE", "Czech Republic", "Europe", 10278100, 78866.00, 55017.00, 3339));
+		countries.put("DEU", new Country("DEU", "Germany", "Europe", 82164700, 357022.00, 2133367.00, 3068));
+		countries.put("DJI", new Country("DJI", "Djibouti", "Africa", 638000, 23200.00, 382.00, 585));
+		countries.put("DMA", new Country("DMA", "Dominica", "North America", 71000, 751.00, 256.00, 586));
+		countries.put("DNK", new Country("DNK", "Denmark", "Europe", 5330000, 43094.00, 174099.00, 3315));
+		countries.put("DOM",
+				new Country("DOM", "Dominican Republic", "North America", 8495000, 48511.00, 15846.00, 587));
+		countries.put("DZA", new Country("DZA", "Algeria", "Africa", 31471000, 2381741.00, 49982.00, 35));
+		countries.put("ECU", new Country("ECU", "Ecuador", "South America", 12646000, 283561.00, 19770.00, 594));
+		countries.put("EGY", new Country("EGY", "Egypt", "Africa", 68470000, 1001449.00, 82710.00, 608));
+		countries.put("ERI", new Country("ERI", "Eritrea", "Africa", 3850000, 117600.00, 650.00, 652));
+		countries.put("ESH", new Country("ESH", "Western Sahara", "Africa", 293000, 266000.00, 60.00, 2453));
+		countries.put("ESP", new Country("ESP", "Spain", "Europe", 39441700, 505992.00, 553233.00, 653));
+		countries.put("EST", new Country("EST", "Estonia", "Europe", 1439200, 45227.00, 5328.00, 3791));
+		countries.put("ETH", new Country("ETH", "Ethiopia", "Africa", 62565000, 1104300.00, 6353.00, 756));
+		countries.put("FIN", new Country("FIN", "Finland", "Europe", 5171300, 338145.00, 121914.00, 3236));
+		countries.put("FJI", new Country("FJI", "Fiji Islands", "Oceania", 817000, 18274.00, 1536.00, 764));
+		countries.put("FLK", new Country("FLK", "Falkland Islands", "South America", 2000, 12173.00, 0.00, 763));
+		countries.put("FRA", new Country("FRA", "France", "Europe", 59225700, 551500.00, 1424285.00, 2974));
+		countries.put("FRO", new Country("FRO", "Faroe Islands", "Europe", 43000, 1399.00, 0.00, 901));
+		countries.put("FSM",
+				new Country("FSM", "Micronesia, Federated States of", "Oceania", 119000, 702.00, 212.00, 2689));
+		countries.put("GAB", new Country("GAB", "Gabon", "Africa", 1226000, 267668.00, 5493.00, 902));
+		countries.put("GBR", new Country("GBR", "United Kingdom", "Europe", 59623400, 242900.00, 1378330.00, 456));
+		countries.put("GEO", new Country("GEO", "Georgia", "Asia", 4968000, 69700.00, 6064.00, 905));
+		countries.put("GHA", new Country("GHA", "Ghana", "Africa", 20212000, 238533.00, 7137.00, 910));
+		countries.put("GIB", new Country("GIB", "Gibraltar", "Europe", 25000, 6.00, 258.00, 915));
+		countries.put("GIN", new Country("GIN", "Guinea", "Africa", 7430000, 245857.00, 2352.00, 926));
+		countries.put("GLP", new Country("GLP", "Guadeloupe", "North America", 456000, 1705.00, 3501.00, 919));
+		countries.put("GMB", new Country("GMB", "Gambia", "Africa", 1305000, 11295.00, 320.00, 904));
+		countries.put("GNB", new Country("GNB", "Guinea-Bissau", "Africa", 1213000, 36125.00, 293.00, 927));
+		countries.put("GNQ", new Country("GNQ", "Equatorial Guinea", "Africa", 453000, 28051.00, 283.00, 2972));
+		countries.put("GRC", new Country("GRC", "Greece", "Europe", 10545700, 131626.00, 120724.00, 2401));
+		countries.put("GRD", new Country("GRD", "Grenada", "North America", 94000, 344.00, 318.00, 916));
+		countries.put("GRL", new Country("GRL", "Greenland", "North America", 56000, 2166090.00, 0.00, 917));
+		countries.put("GTM", new Country("GTM", "Guatemala", "North America", 11385000, 108889.00, 19008.00, 922));
+		countries.put("GUF", new Country("GUF", "French Guiana", "South America", 181000, 90000.00, 681.00, 3014));
+		countries.put("GUM", new Country("GUM", "Guam", "Oceania", 168000, 549.00, 1197.00, 921));
+		countries.put("GUY", new Country("GUY", "Guyana", "South America", 861000, 214969.00, 722.00, 928));
+		countries.put("HKG", new Country("HKG", "Hong Kong", "Asia", 6782000, 1075.00, 166448.00, 937));
+		countries.put("HMD",
+				new Country("HMD", "Heard Island and McDonald Islands", "Antarctica", 0, 359.00, 0.00, -1));
+		countries.put("HND", new Country("HND", "Honduras", "North America", 6485000, 112088.00, 5333.00, 933));
+		countries.put("HRV", new Country("HRV", "Croatia", "Europe", 4473000, 56538.00, 20208.00, 2409));
+		countries.put("HTI", new Country("HTI", "Haiti", "North America", 8222000, 27750.00, 3459.00, 929));
+		countries.put("HUN", new Country("HUN", "Hungary", "Europe", 10043200, 93030.00, 48267.00, 3483));
+		countries.put("IDN", new Country("IDN", "Indonesia", "Asia", 212107000, 1904569.00, 84982.00, 939));
+		countries.put("IND", new Country("IND", "India", "Asia", 1013662000, 3287263.00, 447114.00, 1109));
+		countries.put("IOT", new Country("IOT", "British Indian Ocean Territory", "Africa", 0, 78.00, 0.00, -1));
+		countries.put("IRL", new Country("IRL", "Ireland", "Europe", 3775100, 70273.00, 75921.00, 1447));
+		countries.put("IRN", new Country("IRN", "Iran", "Asia", 67702000, 1648195.00, 195746.00, 1380));
+		countries.put("IRQ", new Country("IRQ", "Iraq", "Asia", 23115000, 438317.00, 11500.00, 1365));
+		countries.put("ISL", new Country("ISL", "Iceland", "Europe", 279000, 103000.00, 8255.00, 1449));
+		countries.put("ISR", new Country("ISR", "Israel", "Asia", 6217000, 21056.00, 97477.00, 1450));
+		countries.put("ITA", new Country("ITA", "Italy", "Europe", 57680000, 301316.00, 1161755.00, 1464));
+		countries.put("JAM", new Country("JAM", "Jamaica", "North America", 2583000, 10990.00, 6871.00, 1530));
+		countries.put("JOR", new Country("JOR", "Jordan", "Asia", 5083000, 88946.00, 7526.00, 1786));
+		countries.put("JPN", new Country("JPN", "Japan", "Asia", 126714000, 377829.00, 3787042.00, 1532));
+		countries.put("KAZ", new Country("KAZ", "Kazakstan", "Asia", 16223000, 2724900.00, 24375.00, 1864));
+		countries.put("KEN", new Country("KEN", "Kenya", "Africa", 30080000, 580367.00, 9217.00, 1881));
+		countries.put("KGZ", new Country("KGZ", "Kyrgyzstan", "Asia", 4699000, 199900.00, 1626.00, 2253));
+		countries.put("KHM", new Country("KHM", "Cambodia", "Asia", 11168000, 181035.00, 5121.00, 1800));
+		countries.put("KIR", new Country("KIR", "Kiribati", "Oceania", 83000, 726.00, 40.70, 2256));
+		countries.put("KNA", new Country("KNA", "Saint Kitts and Nevis", "North America", 38000, 261.00, 299.00, 3064));
+		countries.put("KOR", new Country("KOR", "South Korea", "Asia", 46844000, 99434.00, 320749.00, 2331));
+		countries.put("KWT", new Country("KWT", "Kuwait", "Asia", 1972000, 17818.00, 27037.00, 2429));
+		countries.put("LAO", new Country("LAO", "Laos", "Asia", 5433000, 236800.00, 1292.00, 2432));
+		countries.put("LBN", new Country("LBN", "Lebanon", "Asia", 3282000, 10400.00, 17121.00, 2438));
+		countries.put("LBR", new Country("LBR", "Liberia", "Africa", 3154000, 111369.00, 2012.00, 2440));
+		countries.put("LBY",
+				new Country("LBY", "Libyan Arab Jamahiriya", "Africa", 5605000, 1759540.00, 44806.00, 2441));
+		countries.put("LCA", new Country("LCA", "Saint Lucia", "North America", 154000, 622.00, 571.00, 3065));
+		countries.put("LIE", new Country("LIE", "Liechtenstein", "Europe", 32300, 160.00, 1119.00, 2446));
+		countries.put("LKA", new Country("LKA", "Sri Lanka", "Asia", 18827000, 65610.00, 15706.00, 3217));
+		countries.put("LSO", new Country("LSO", "Lesotho", "Africa", 2153000, 30355.00, 1061.00, 2437));
+		countries.put("LTU", new Country("LTU", "Lithuania", "Europe", 3698500, 65301.00, 10692.00, 2447));
+		countries.put("LUX", new Country("LUX", "Luxembourg", "Europe", 435700, 2586.00, 16321.00, 2452));
+		countries.put("LVA", new Country("LVA", "Latvia", "Europe", 2424200, 64589.00, 6398.00, 2434));
+		countries.put("MAC", new Country("MAC", "Macao", "Asia", 473000, 18.00, 5749.00, 2454));
+		countries.put("MAR", new Country("MAR", "Morocco", "Africa", 28351000, 446550.00, 36124.00, 2486));
+		countries.put("MCO", new Country("MCO", "Monaco", "Europe", 34000, 1.50, 776.00, 2695));
+		countries.put("MDA", new Country("MDA", "Moldova", "Europe", 4380000, 33851.00, 1579.00, 2690));
+		countries.put("MDG", new Country("MDG", "Madagascar", "Africa", 15942000, 587041.00, 3750.00, 2455));
+		countries.put("MDV", new Country("MDV", "Maldives", "Asia", 286000, 298.00, 199.00, 2463));
+		countries.put("MEX", new Country("MEX", "Mexico", "North America", 98881000, 1958201.00, 414972.00, 2515));
+		countries.put("MHL", new Country("MHL", "Marshall Islands", "Oceania", 64000, 181.00, 97.00, 2507));
+		countries.put("MKD", new Country("MKD", "Macedonia", "Europe", 2024000, 25713.00, 1694.00, 2460));
+		countries.put("MLI", new Country("MLI", "Mali", "Africa", 11234000, 1240192.00, 2642.00, 2482));
+		countries.put("MLT", new Country("MLT", "Malta", "Europe", 380200, 316.00, 3512.00, 2484));
+		countries.put("MMR", new Country("MMR", "Myanmar", "Asia", 45611000, 676578.00, 180375.00, 2710));
+		countries.put("MNG", new Country("MNG", "Mongolia", "Asia", 2662000, 1566500.00, 1043.00, 2696));
+		countries.put("MNP", new Country("MNP", "Northern Mariana Islands", "Oceania", 78000, 464.00, 0.00, 2913));
+		countries.put("MOZ", new Country("MOZ", "Mozambique", "Africa", 19680000, 801590.00, 2891.00, 2698));
+		countries.put("MRT", new Country("MRT", "Mauritania", "Africa", 2670000, 1025520.00, 998.00, 2509));
+		countries.put("MSR", new Country("MSR", "Montserrat", "North America", 11000, 102.00, 109.00, 2697));
+		countries.put("MTQ", new Country("MTQ", "Martinique", "North America", 395000, 1102.00, 2731.00, 2508));
+		countries.put("MUS", new Country("MUS", "Mauritius", "Africa", 1158000, 2040.00, 4251.00, 2511));
+		countries.put("MWI", new Country("MWI", "Malawi", "Africa", 10925000, 118484.00, 1687.00, 2462));
+		countries.put("MYS", new Country("MYS", "Malaysia", "Asia", 22244000, 329758.00, 69213.00, 2464));
+		countries.put("MYT", new Country("MYT", "Mayotte", "Africa", 149000, 373.00, 0.00, 2514));
+		countries.put("NAM", new Country("NAM", "Namibia", "Africa", 1726000, 824292.00, 3101.00, 2726));
+		countries.put("NCL", new Country("NCL", "New Caledonia", "Oceania", 214000, 18575.00, 3563.00, 3493));
+		countries.put("NER", new Country("NER", "Niger", "Africa", 10730000, 1267000.00, 1706.00, 2738));
+		countries.put("NFK", new Country("NFK", "Norfolk Island", "Oceania", 2000, 36.00, 0.00, 2806));
+		countries.put("NGA", new Country("NGA", "Nigeria", "Africa", 111506000, 923768.00, 65707.00, 2754));
+		countries.put("NIC", new Country("NIC", "Nicaragua", "North America", 5074000, 130000.00, 1988.00, 2734));
+		countries.put("NIU", new Country("NIU", "Niue", "Oceania", 2000, 260.00, 0.00, 2805));
+		countries.put("NLD", new Country("NLD", "Netherlands", "Europe", 15864000, 41526.00, 371362.00, 5));
+		countries.put("NOR", new Country("NOR", "Norway", "Europe", 4478500, 323877.00, 145895.00, 2807));
+		countries.put("NPL", new Country("NPL", "Nepal", "Asia", 23930000, 147181.00, 4768.00, 2729));
+		countries.put("NRU", new Country("NRU", "Nauru", "Oceania", 12000, 21.00, 197.00, 2728));
+		countries.put("NZL", new Country("NZL", "New Zealand", "Oceania", 3862000, 270534.00, 54669.00, 3499));
+		countries.put("OMN", new Country("OMN", "Oman", "Asia", 2542000, 309500.00, 16904.00, 2821));
+		countries.put("PAK", new Country("PAK", "Pakistan", "Asia", 156483000, 796095.00, 61289.00, 2831));
+		countries.put("PAN", new Country("PAN", "Panama", "North America", 2856000, 75517.00, 9131.00, 2882));
+		countries.put("PCN", new Country("PCN", "Pitcairn", "Oceania", 50, 49.00, 0.00, 2912));
+		countries.put("PER", new Country("PER", "Peru", "South America", 25662000, 1285216.00, 64140.00, 2890));
+		countries.put("PHL", new Country("PHL", "Philippines", "Asia", 75967000, 300000.00, 65107.00, 766));
+		countries.put("PLW", new Country("PLW", "Palau", "Oceania", 19000, 459.00, 105.00, 2881));
+		countries.put("PNG", new Country("PNG", "Papua New Guinea", "Oceania", 4807000, 462840.00, 4988.00, 2884));
+		countries.put("POL", new Country("POL", "Poland", "Europe", 38653600, 323250.00, 151697.00, 2928));
+		countries.put("PRI", new Country("PRI", "Puerto Rico", "North America", 3869000, 8875.00, 34100.00, 2919));
+		countries.put("PRK", new Country("PRK", "North Korea", "Asia", 24039000, 120538.00, 5332.00, 2318));
+		countries.put("PRT", new Country("PRT", "Portugal", "Europe", 9997600, 91982.00, 105954.00, 2914));
+		countries.put("PRY", new Country("PRY", "Paraguay", "South America", 5496000, 406752.00, 8444.00, 2885));
+		countries.put("PSE", new Country("PSE", "Palestine", "Asia", 3101000, 6257.00, 4173.00, 4074));
+		countries.put("PYF", new Country("PYF", "French Polynesia", "Oceania", 235000, 4000.00, 818.00, 3016));
+		countries.put("QAT", new Country("QAT", "Qatar", "Asia", 599000, 11000.00, 9472.00, 2973));
+		countries.put("REU", new Country("REU", "Râ€šunion", "Africa", 699000, 2510.00, 8287.00, 3017));
+		countries.put("ROM", new Country("ROM", "Romania", "Europe", 22455500, 238391.00, 38158.00, 3018));
+		countries.put("RUS",
+				new Country("RUS", "Russian Federation", "Europe", 146934000, 17075400.00, 276608.00, 3580));
+		countries.put("RWA", new Country("RWA", "Rwanda", "Africa", 7733000, 26338.00, 2036.00, 3047));
+		countries.put("SAU", new Country("SAU", "Saudi Arabia", "Asia", 21607000, 2149690.00, 137635.00, 3173));
+		countries.put("SDN", new Country("SDN", "Sudan", "Africa", 29490000, 2505813.00, 10162.00, 3225));
+		countries.put("SEN", new Country("SEN", "Senegal", "Africa", 9481000, 196722.00, 4787.00, 3198));
+		countries.put("SGP", new Country("SGP", "Singapore", "Asia", 3567000, 618.00, 86503.00, 3208));
+		countries.put("SGS",
+				new Country("SGS", "South Georgia and the South Sandwich Islands", "Antarctica", 0, 3903.00, 0.00, -1));
+		countries.put("SHN", new Country("SHN", "Saint Helena", "Africa", 6000, 314.00, 0.00, 3063));
+		countries.put("SJM", new Country("SJM", "Svalbard and Jan Mayen", "Europe", 3200, 62422.00, 0.00, 938));
+		countries.put("SLB", new Country("SLB", "Solomon Islands", "Oceania", 444000, 28896.00, 182.00, 3161));
+		countries.put("SLE", new Country("SLE", "Sierra Leone", "Africa", 4854000, 71740.00, 746.00, 3207));
+		countries.put("SLV", new Country("SLV", "El Salvador", "North America", 6276000, 21041.00, 11863.00, 645));
+		countries.put("SMR", new Country("SMR", "San Marino", "Europe", 27000, 61.00, 510.00, 3171));
+		countries.put("SOM", new Country("SOM", "Somalia", "Africa", 10097000, 637657.00, 935.00, 3214));
+		countries.put("SPM",
+				new Country("SPM", "Saint Pierre and Miquelon", "North America", 7000, 242.00, 0.00, 3067));
+		countries.put("STP", new Country("STP", "Sao Tome and Principe", "Africa", 147000, 964.00, 6.00, 3172));
+		countries.put("SUR", new Country("SUR", "Suriname", "South America", 417000, 163265.00, 870.00, 3243));
+		countries.put("SVK", new Country("SVK", "Slovakia", "Europe", 5398700, 49012.00, 20594.00, 3209));
+		countries.put("SVN", new Country("SVN", "Slovenia", "Europe", 1987800, 20256.00, 19756.00, 3212));
+		countries.put("SWE", new Country("SWE", "Sweden", "Europe", 8861400, 449964.00, 226492.00, 3048));
+		countries.put("SWZ", new Country("SWZ", "Swaziland", "Africa", 1008000, 17364.00, 1206.00, 3244));
+		countries.put("SYC", new Country("SYC", "Seychelles", "Africa", 77000, 455.00, 536.00, 3206));
+		countries.put("SYR", new Country("SYR", "Syria", "Asia", 16125000, 185180.00, 65984.00, 3250));
+		countries.put("TCA",
+				new Country("TCA", "Turks and Caicos Islands", "North America", 17000, 430.00, 96.00, 3423));
+		countries.put("TCD", new Country("TCD", "Chad", "Africa", 7651000, 1284000.00, 1208.00, 3337));
+		countries.put("TGO", new Country("TGO", "Togo", "Africa", 4629000, 56785.00, 1449.00, 3332));
+		countries.put("THA", new Country("THA", "Thailand", "Asia", 61399000, 513115.00, 116416.00, 3320));
+		countries.put("TJK", new Country("TJK", "Tajikistan", "Asia", 6188000, 143100.00, 1990.00, 3261));
+		countries.put("TKL", new Country("TKL", "Tokelau", "Oceania", 2000, 12.00, 0.00, 3333));
+		countries.put("TKM", new Country("TKM", "Turkmenistan", "Asia", 4459000, 488100.00, 4397.00, 3419));
+		countries.put("TMP", new Country("TMP", "East Timor", "Asia", 885000, 14874.00, 0.00, 1522));
+		countries.put("TON", new Country("TON", "Tonga", "Oceania", 99000, 650.00, 146.00, 3334));
+		countries.put("TTO",
+				new Country("TTO", "Trinidad and Tobago", "North America", 1295000, 5130.00, 6232.00, 3336));
+		countries.put("TUN", new Country("TUN", "Tunisia", "Africa", 9586000, 163610.00, 20026.00, 3349));
+		countries.put("TUR", new Country("TUR", "Turkey", "Asia", 66591000, 774815.00, 210721.00, 3358));
+		countries.put("TUV", new Country("TUV", "Tuvalu", "Oceania", 12000, 26.00, 6.00, 3424));
+		countries.put("TWN", new Country("TWN", "Taiwan", "Asia", 22256000, 36188.00, 256254.00, 3263));
+		countries.put("TZA", new Country("TZA", "Tanzania", "Africa", 33517000, 883749.00, 8005.00, 3306));
+		countries.put("UGA", new Country("UGA", "Uganda", "Africa", 21778000, 241038.00, 6313.00, 3425));
+		countries.put("UKR", new Country("UKR", "Ukraine", "Europe", 50456000, 603700.00, 42168.00, 3426));
+		countries.put("UMI", new Country("UMI", "United States Minor Outlying Islands", "Oceania", 0, 16.00, 0.00, -1));
+		countries.put("URY", new Country("URY", "Uruguay", "South America", 3337000, 175016.00, 20831.00, 3492));
+		countries.put("USA",
+				new Country("USA", "United States", "North America", 278357000, 9363520.00, 8510700.00, 3813));
+		countries.put("UZB", new Country("UZB", "Uzbekistan", "Asia", 24318000, 447400.00, 14194.00, 3503));
+		countries.put("VAT", new Country("VAT", "Holy See (Vatican City State)", "Europe", 1000, 0.40, 9.00, 3538));
+		countries.put("VCT",
+				new Country("VCT", "Saint Vincent and the Grenadines", "North America", 114000, 388.00, 285.00, 3066));
+		countries.put("VEN", new Country("VEN", "Venezuela", "South America", 24170000, 912050.00, 95023.00, 3539));
+		countries.put("VGB",
+				new Country("VGB", "Virgin Islands, British", "North America", 21000, 151.00, 612.00, 537));
+		countries.put("VIR", new Country("VIR", "Virgin Islands, U.S.", "North America", 93000, 347.00, 0.00, 4067));
+		countries.put("VNM", new Country("VNM", "Vietnam", "Asia", 79832000, 331689.00, 21929.00, 3770));
+		countries.put("VUT", new Country("VUT", "Vanuatu", "Oceania", 190000, 12189.00, 261.00, 3537));
+		countries.put("WLF", new Country("WLF", "Wallis and Futuna", "Oceania", 15000, 200.00, 0.00, 3536));
+		countries.put("WSM", new Country("WSM", "Samoa", "Oceania", 180000, 2831.00, 141.00, 3169));
+		countries.put("YEM", new Country("YEM", "Yemen", "Asia", 18112000, 527968.00, 6041.00, 1780));
+		countries.put("YUG", new Country("YUG", "Yugoslavia", "Europe", 10640000, 102173.00, 17000.00, 1792));
+		countries.put("ZAF", new Country("ZAF", "South Africa", "Africa", 40377000, 1221037.00, 116729.00, 716));
+		countries.put("ZMB", new Country("ZMB", "Zambia", "Africa", 9169000, 752618.00, 3377.00, 3162));
+		countries.put("ZWE", new Country("ZWE", "Zimbabwe", "Africa", 11669000, 390757.00, 5951.00, 4068));
 	}
 
 	public InMemoryWorldDao() {
@@ -4704,8 +4391,7 @@ public class InMemoryWorldDao implements WorldDao {
 		for (City city : cities.values()) {
 			Country country = countries.get(city.getCountryCode());
 			if (country == null) {
-				System.out.println("No such countryCode: "
-						+ city.getCountryCode());
+				System.out.println("No such countryCode: " + city.getCountryCode());
 				continue;
 			}
 			country.getCities().add(city);

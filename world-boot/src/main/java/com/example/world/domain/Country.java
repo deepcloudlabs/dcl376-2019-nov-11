@@ -1,4 +1,5 @@
 package com.example.world.domain;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,8 +19,8 @@ public class Country {
 	public Country() {
 	}
 
-	public Country(String code, String name, String continent, int population,
-			double surfaceArea, double gnp, int capital) {
+	public Country(String code, String name, String continent, int population, double surfaceArea, double gnp,
+			int capital) {
 		this.code = code;
 		this.name = name;
 		this.continent = continent;
@@ -116,10 +117,8 @@ public class Country {
 
 	@Override
 	public String toString() {
-		return "Country [code=" + code + ", name=" + name + ", continent="
-				+ continent + ", surfaceArea=" + surfaceArea + ", population="
-				+ population + ", gnp=" + gnp + ", capital=" + capital
-				+ ", cities=" + cities + "]";
+		return "Country [code=" + code + ", name=" + name + ", continent=" + continent + ", surfaceArea=" + surfaceArea
+				+ ", population=" + population + ", gnp=" + gnp + ", capital=" + capital + ", cities=" + cities + "]";
 	}
 
 }

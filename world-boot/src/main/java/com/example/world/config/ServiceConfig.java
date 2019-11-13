@@ -8,12 +8,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ConditionalOnWebApplication
-@ConditionalOnExpression(
-		"'${os.name}' == 'Windows 10' and ${app.active}"
-)
+@ConditionalOnExpression("'${os.name}' == 'Windows 10' and ${app.active}")
 public class ServiceConfig {
 	@PostConstruct
 	public void init() {
-			System.err.println("ServiceConfig is running...");
+		System.err.println("ServiceConfig is running...");
 	}
 }

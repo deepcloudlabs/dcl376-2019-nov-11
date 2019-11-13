@@ -22,7 +22,7 @@ public class ProfileAspect {
 		long start = System.nanoTime();
 		Object result = pjp.proceed();
 		long stop = System.nanoTime();
-		String methodName = pjp.getSignature().getName()+"*";
+		String methodName = pjp.getSignature().getName() + "*";
 		TimeUnit tu = profile.unit();
 		long duration = stop - start;
 		long converted = tu.convert(duration, TimeUnit.NANOSECONDS);

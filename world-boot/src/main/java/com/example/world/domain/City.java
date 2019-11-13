@@ -1,4 +1,5 @@
 package com.example.world.domain;
+
 public class City {
 	private int id;
 	private String name;
@@ -71,8 +72,8 @@ public class City {
 
 	@Override
 	public String toString() {
-		return "City [id=" + id + ", name=" + name + ", population="
-				+ population + ", countryCode=" + countryCode + "]";
+		return "City [id=" + id + ", name=" + name + ", population=" + population + ", countryCode=" + countryCode
+				+ "]";
 	};
 
 }

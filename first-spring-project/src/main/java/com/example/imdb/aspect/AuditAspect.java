@@ -22,12 +22,12 @@ public class AuditAspect {
 //	@After
 	@Around("execution(* *.*(..))")
 	public Object audit(ProceedingJoinPoint pjp) throws Throwable {
-		String methodName= pjp.getSignature().getName();
+		String methodName = pjp.getSignature().getName();
 		Date now = new Date();
-		System.err.println(methodName+" is called at "+now);
-		System.err.println("Parameters are "+Arrays.toString(pjp.getArgs()));
+		System.err.println(methodName + " is called at " + now);
+		System.err.println("Parameters are " + Arrays.toString(pjp.getArgs()));
 		Object result = pjp.proceed();
-		System.err.println(methodName + " returns "+result);
+		System.err.println(methodName + " returns " + result);
 		return result;
 	}
 }
