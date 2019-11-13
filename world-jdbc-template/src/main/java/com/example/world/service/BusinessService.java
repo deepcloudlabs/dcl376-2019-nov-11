@@ -44,18 +44,18 @@ public class BusinessService {
 		System.err.println(country);
 		try {
 			TimeUnit.SECONDS.sleep(3);
-		} catch (InterruptedException e) {
+			repo.create(newCountryBuilder("APQ").continent("Asia").name("APQ").surfaceArea(123).population(100).gnp(1000)
+					.setCapital(100).build());
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		repo.create(newCountryBuilder("APQ").continent("Asia").name("APQ").surfaceArea(123).population(100).gnp(1000)
-				.setCapital(100).build());
 		try {
 			TimeUnit.SECONDS.sleep(3);
-		} catch (InterruptedException e) {
+			repo.create(newCountryBuilder("QQQ").continent("Asia").name("APQ").surfaceArea(123).population(100).gnp(1000)
+					.setCapital(100).build());
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		repo.create(newCountryBuilder("QQQ").continent("Asia").name("APQ").surfaceArea(123).population(100).gnp(1000)
-				.setCapital(100).build());
 		try {
 			TimeUnit.SECONDS.sleep(3);
 		} catch (InterruptedException e) {

@@ -107,6 +107,7 @@ public class JdbcTemplateCountryRepository implements CountryRepository {
 	@Override
 	@Transactional(propagation = Propagation.REQUIRES_NEW)
 	public void create(Country country) {
+		try {
 		final Map<String, Object> parameters = new HashMap<String, Object>();
 		parameters.put("code", country.getCode());
 		parameters.put("name", country.getName());
@@ -116,10 +117,15 @@ public class JdbcTemplateCountryRepository implements CountryRepository {
 		parameters.put("gnp", country.getGnp().getValue());
 		parameters.put("capital", country.getCapital().getId());
 		jdbcTemplate.update(INSERT_INTO_COUNTRY, parameters);
+		throw new IllegalArgumentException("Ooopps");
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		return;
 	}
 
 	@Override
-	@Transactional
+	@Transactional(isolation = Isolation.DEFAULT)
 	public void update(Country country) {
 		final Map<String, Object> parameters = new HashMap<String, Object>();
 		parameters.put("code", country.getCode());
@@ -127,7 +133,6 @@ public class JdbcTemplateCountryRepository implements CountryRepository {
 		parameters.put("surfacearea", country.getSurfaceArea());
 		parameters.put("gnp", country.getGnp().getValue());
 		parameters.put("capital", country.getCapital().getId());
-		System.err.println(parameters);
 		jdbcTemplate.update(UPDATE_COUNTRY, parameters);
 	}
 
