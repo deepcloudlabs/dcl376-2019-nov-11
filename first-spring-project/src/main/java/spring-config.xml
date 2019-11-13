@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     <bean class="com.example.imdb.service.business.SequenceServiceImpl"
+           name="seqsrv,myseqsrv"
+           scope="singleton"
+           id="sequenceSrv">
+     </bean>
+     <import resource="database-config.xml"/>
+     <import resource="security.xml"/>
+     <bean class="com.example.imdb.service.business.InMemoryMovieService"
+           scope="singleton"
+           init-method="populate"
+           autowire="byType"
+           id="movieSrv">
+     </bean>
+
+</beans>
