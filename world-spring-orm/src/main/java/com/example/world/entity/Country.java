@@ -20,6 +20,7 @@ import org.hibernate.annotations.DynamicUpdate;
  *
  * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
+
 /*
 DELIMITER //
 CREATE PROCEDURE continent_countries_capital
