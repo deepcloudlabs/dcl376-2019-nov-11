@@ -15,7 +15,7 @@ import com.example.world.service.BusinessService;
  *  @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 @SuppressWarnings("unused")
-public class App {
+public class App2 {
 	private static final Consumer<Country> printCountry = country -> {
 		System.err.println(country);
 		System.err.println(country.getCapital());
@@ -29,10 +29,7 @@ public class App {
 		try (ConfigurableApplicationContext container = new AnnotationConfigApplicationContext(AppConfig.class)) {
 			final CountryRepository repo = container.getBean(CountryRepository.class);
 			BusinessService bs = container.getBean(BusinessService.class);
-			System.err.println(bs.getClass());
-//			bs.haveGun();
-			bs.haveFun();
-//			repo.findById("TUR").ifPresent(printCountry);
+			bs.haveRun();
 		}
 	}
 }

@@ -9,11 +9,13 @@ import java.util.stream.Stream;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.world.entity.Country;
+import com.example.world.entity.CountryStatistics;
 import com.example.world.repository.CountryRepository;
 
 /**
@@ -37,6 +39,7 @@ public class SpringOrmCountryRepository implements CountryRepository {
 	}
 
 	@Override
+	@Transactional(propagation = Propagation.MANDATORY)
 	public Stream<Country> findAllStream(int pageNo, int pageSize) {
 		return em.createNamedQuery("Country.findAll", Country.class).setFirstResult(pageNo * pageSize)
 				.setMaxResults(pageSize).getResultStream();
@@ -54,11 +57,13 @@ public class SpringOrmCountryRepository implements CountryRepository {
 		String code = country.getCode();
 		Country managedCountry = em.find(Country.class, code);
 		if (Objects.nonNull(managedCountry)) {
-			managedCountry.setGnp(country.getGnp());
-			managedCountry.setPopulation(country.getPopulation());
-			managedCountry.setSurfaceArea(country.getSurfaceArea());
-			em.merge(managedCountry);
-			em.flush();
+			CountryStatistics managedStat = managedCountry.getStatistics();
+			CountryStatistics stat = country.getStatistics();
+			managedStat.setSurfaceArea(stat.getSurfaceArea());
+			managedStat.setPopulation(stat.getPopulation());
+			managedStat.setGnp(stat.getGnp());
+//			em.merge(managedCountry);
+//			em.flush();
 		}
 	}
 
@@ -84,7 +89,8 @@ public class SpringOrmCountryRepository implements CountryRepository {
 
 	@Override
 	public List<Country> findAllByContinent(String continent) {
-		return em.createNamedQuery("Country.findAllByContinent", Country.class).setParameter("continent", continent)
+		return em.createNamedQuery("Country.findAllByContinent", Country.class)
+			   .setParameter("continent", continent)
 				.getResultList();
 	}
 

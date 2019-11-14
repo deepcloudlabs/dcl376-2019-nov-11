@@ -1,6 +1,8 @@
 package com.example.world.service;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
@@ -11,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.example.world.entity.City;
 import com.example.world.entity.Country;
+import com.example.world.entity.CountryStatistics;
 import com.example.world.repository.CountryRepository;
 
 /**
@@ -41,28 +44,44 @@ public class BusinessService {
 	@Transactional
 	public void haveFun() {
 		// repo.findById("TUR").ifPresent(printCountry);
-		repo.findAll(0, 200).stream().filter(country -> Objects.nonNull(country.getGnp())).forEach(country -> {
-			country.setGnp(country.getGnp() + 1);
-			repo.update(country);
+		repo.findAll(0, 1).stream().filter(country -> Objects.nonNull(country.getStatistics().getGnp())).forEach(country -> {
+			CountryStatistics stat = country.getStatistics();
+			System.err.println(country.getClass());
+//			stat.setGnp(stat.getGnp() + 1);
+//			country.getCities().forEach(city->city.setPopulation(city.getPopulation()+1));
 		});
-		try {
-			TimeUnit.SECONDS.sleep(10);
-			System.err.println(new Date());
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-//		Country country = new Country();
-//		country.setCode("AAA");
-//		country.setName("AAAAAA");
-//		country.setContinent("Asia");
-//		country.setPopulation(1111);
-//		country.setSurfaceArea(2111);
-//		country.setGnp(100011);
-//		repo.update(country);
+//		try {
+//			TimeUnit.SECONDS.sleep(10);
+//			System.err.println(new Date());
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 	}
 
 	@Transactional
 	public void haveSun() {
 		repo.findAllStream(0, 100).forEach(printCountry);		
+	}
+	
+	@Transactional
+	public void haveRun() {
+		Country country = new Country();
+		country.setCode("BBB");
+		country.setName("AAAAAA");
+		country.setContinent("Asia");
+		CountryStatistics statistics = new CountryStatistics();
+		statistics.setPopulation(1111);
+		statistics.setSurfaceArea(2111);
+		statistics.setGnp(100011D);
+		country.setStatistics(statistics);
+		City capital = new City();
+		capital.setCountry(country);
+		capital.setName("CAPAAAA");
+		capital.setPopulation(11111);
+//		country.setCapital(capital);
+		List<City> cities = new ArrayList<>();
+		cities.add(capital);
+		country.setCities(cities);
+		repo.create(country);
 	}
 }

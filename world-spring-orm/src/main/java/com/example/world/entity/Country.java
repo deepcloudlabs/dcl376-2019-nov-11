@@ -2,7 +2,9 @@ package com.example.world.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -16,15 +18,23 @@ import org.hibernate.annotations.DynamicUpdate;
 
 /**
  *
- *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
+/*
+DELIMITER //
+CREATE PROCEDURE continent_countries_capital
+(IN cont CHAR(20))
+BEGIN
+  SELECT co.code, co.Name as "Name", ci.id, ci.Name as "Capital" FROM Country as co, City ci
+  WHERE co.Continent = cont AND co.capital=ci.id;
+END //
+DELIMITER ;
  */
 @Entity
 @Table(name = "country")
-@NamedQueries({ 
-	@NamedQuery(name = "Country.findAll", query = "select c from Country c"), 
-	@NamedQuery(name = "Country.findAllByContinent", query = "select c from Country c where c.continent=:continent"), 
-	@NamedQuery(name = "Country.findDistinctContinent", query = "select distinct c.continent from Country c"), 
-})
+@NamedQueries({ @NamedQuery(name = "Country.findAll", query = "select c from Country c"),
+		@NamedQuery(name = "Country.findAllByContinent", query = "select c from Country c where c.continent=:continent"),
+		@NamedQuery(name = "Country.findDistinctContinent", query = "select distinct c.continent from Country c"), })
 @DynamicUpdate
 public class Country {
 	@Id
@@ -34,19 +44,25 @@ public class Country {
 	private String name;
 	@Column(name = "continent", nullable = false)
 	private String continent;
-	@Column(name = "surfacearea", nullable = false)
-	private double surfaceArea;
-	@Column(name = "population")
-	private long population;
-	@Column(name = "gnp")
-	private Double gnp;
-	@OneToOne
-	@JoinColumn(name = "capital")
+	@Embedded
+	private CountryStatistics statistics;
+	@OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REFRESH})
+	@JoinColumn(name = "capital",referencedColumnName = "countrycode")
 	private City capital;
-	@OneToMany(mappedBy = "country")
+	@OneToMany(mappedBy = "country",cascade =  {CascadeType.PERSIST,CascadeType.MERGE})
 	private List<City> cities;
 	@OneToMany(mappedBy = "id.code")
 	private List<CountryLanguage> languages;
+	@Column
+	private int test;
+	
+	public int getTest() {
+		return test;
+	}
+
+	public void setTest(int test) {
+		this.test = test;
+	}
 
 	public Country() {
 	}
@@ -75,28 +91,12 @@ public class Country {
 		this.continent = continent;
 	}
 
-	public double getSurfaceArea() {
-		return surfaceArea;
+	public CountryStatistics getStatistics() {
+		return statistics;
 	}
 
-	public void setSurfaceArea(double surfaceArea) {
-		this.surfaceArea = surfaceArea;
-	}
-
-	public long getPopulation() {
-		return population;
-	}
-
-	public void setPopulation(long population) {
-		this.population = population;
-	}
-
-	public Double getGnp() {
-		return gnp;
-	}
-
-	public void setGnp(Double gnp) {
-		this.gnp = gnp;
+	public void setStatistics(CountryStatistics statistics) {
+		this.statistics = statistics;
 	}
 
 	public City getCapital() {
@@ -150,7 +150,8 @@ public class Country {
 
 	@Override
 	public String toString() {
-		return "Country [code=" + code + ", name=" + name + ", continent=" + continent + "]";
+		return "Country [code=" + code + ", name=" + name + ", continent=" + continent + ", statistics=" + statistics
+				+ "]";
 	}
 
 }

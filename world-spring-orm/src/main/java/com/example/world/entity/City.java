@@ -1,13 +1,17 @@
 package com.example.world.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.DynamicUpdate;
 
 /**
  *
@@ -15,6 +19,7 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name = "city")
+@DynamicUpdate
 public class City {
 	@Id
 	@Column(name = "id")
@@ -22,12 +27,14 @@ public class City {
 	private Long id;
 	@Column(name = "name")
 	private String name;
-	@Column(name = "population")
 	private long population;
-	@ManyToOne
-	@JoinColumn(name = "countrycode")
+	@ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+	@JoinColumn(name = "countrycode",referencedColumnName = "code")
 	private Country country;
-
+	@Lob
+	@Column(columnDefinition = "longblob")
+	private byte[] photo;
+	
 	public City() {
 	}
 
@@ -35,6 +42,14 @@ public class City {
 		this.name = name;
 		this.population = population;
 		this.country = country;
+	}
+
+	public byte[] getPhoto() {
+		return photo;
+	}
+
+	public void setPhoto(byte[] photo) {
+		this.photo = photo;
 	}
 
 	public Long getId() {

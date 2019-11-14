@@ -65,6 +65,7 @@ public class AppConfig {
 		jpaProperties.put("hibernate.show_sql", "true");
 		jpaProperties.put("hibernate.format_sql", "true");
 		jpaProperties.put("hibernate.use_sql_comments", "true");
+		jpaProperties.put("hibernate.hbm2ddl.auto", "update");
 		jpaProperties.put("use_sql_comments", "true");
 		entityManagerFactory.setJpaProperties(jpaProperties);
 		return entityManagerFactory;
