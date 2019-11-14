@@ -10,6 +10,10 @@ import com.example.world.entity.Country;
 import com.example.world.repository.CountryRepository;
 import com.example.world.service.BusinessService;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @SuppressWarnings("unused")
 public class App {
 	private static final Consumer<Country> printCountry = country -> {
@@ -24,7 +28,10 @@ public class App {
 	public static void main(String[] args) {
 		try (ConfigurableApplicationContext container = new AnnotationConfigApplicationContext(AppConfig.class)) {
 			final CountryRepository repo = container.getBean(CountryRepository.class);
-			container.getBean(BusinessService.class).haveFun();
+			BusinessService bs = container.getBean(BusinessService.class);
+			System.err.println(bs.getClass());
+			bs.haveGun();
+			bs.haveSun();
 //			repo.findById("TUR").ifPresent(printCountry);
 		}
 	}

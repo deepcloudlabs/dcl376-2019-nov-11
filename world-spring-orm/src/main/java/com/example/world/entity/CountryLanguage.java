@@ -8,6 +8,10 @@ import javax.persistence.Table;
 
 import com.example.world.entity.converter.BooleanCharacterConverter;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Entity
 @Table(name = "countrylanguage")
 public class CountryLanguage {

@@ -18,6 +18,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Configuration
 @ComponentScan(basePackages = { "com.example.world.repository.orm", "com.example.world.service" })
 @EnableTransactionManagement
@@ -58,8 +62,10 @@ public class AppConfig {
 		entityManagerFactory.setJpaVendorAdapter(hibernateJpaVendorAdapter);
 		entityManagerFactory.setPackagesToScan("com.example.world.entity");
 		Properties jpaProperties = new Properties();
-		jpaProperties.put("show_sql", "true");
-		jpaProperties.put("format_sql", "true");
+		jpaProperties.put("hibernate.show_sql", "true");
+		jpaProperties.put("hibernate.format_sql", "true");
+		jpaProperties.put("hibernate.use_sql_comments", "true");
+		jpaProperties.put("use_sql_comments", "true");
 		entityManagerFactory.setJpaProperties(jpaProperties);
 		return entityManagerFactory;
 	}

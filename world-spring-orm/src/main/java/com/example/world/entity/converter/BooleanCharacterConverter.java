@@ -2,6 +2,10 @@ package com.example.world.entity.converter;
 
 import javax.persistence.AttributeConverter;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 public class BooleanCharacterConverter implements AttributeConverter<Boolean, Character> {
 
 	public Character convertToDatabaseColumn(Boolean value) {

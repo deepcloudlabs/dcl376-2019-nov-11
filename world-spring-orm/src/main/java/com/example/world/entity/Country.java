@@ -12,9 +12,20 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.DynamicUpdate;
+
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Entity
 @Table(name = "country")
-@NamedQueries({ @NamedQuery(name = "Country.findAll", query = "select c from Country c") })
+@NamedQueries({ 
+	@NamedQuery(name = "Country.findAll", query = "select c from Country c"), 
+	@NamedQuery(name = "Country.findAllByContinent", query = "select c from Country c where c.continent=:continent"), 
+	@NamedQuery(name = "Country.findDistinctContinent", query = "select distinct c.continent from Country c"), 
+})
+@DynamicUpdate
 public class Country {
 	@Id
 	@Column(name = "code")
@@ -28,7 +39,7 @@ public class Country {
 	@Column(name = "population")
 	private long population;
 	@Column(name = "gnp")
-	private double gnp;
+	private Double gnp;
 	@OneToOne
 	@JoinColumn(name = "capital")
 	private City capital;
@@ -80,11 +91,11 @@ public class Country {
 		this.population = population;
 	}
 
-	public double getGnp() {
+	public Double getGnp() {
 		return gnp;
 	}
 
-	public void setGnp(double gnp) {
+	public void setGnp(Double gnp) {
 		this.gnp = gnp;
 	}
 
