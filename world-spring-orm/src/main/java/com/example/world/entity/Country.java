@@ -132,7 +132,9 @@ DELIMITER ;
 			attributeNodes = @NamedAttributeNode(value = "languages", subgraph = "languages"))
 })
 @NamedNativeQueries({
-	@NamedNativeQuery(name = "ContinentCapitals",query = "SELECT co.code, co.name as name, ci.id, ci.name as capital FROM country as co, city ci WHERE co.continent=? AND co.capital=ci.id",resultSetMapping = "CountryCapitalPOJOMapping")
+	@NamedNativeQuery(name = "ContinentCapitals",
+			query = "SELECT co.code, co.name as name, ci.id, ci.name as capital FROM country as co, city ci WHERE co.continent=? AND co.capital=ci.id",
+			resultSetMapping = "CountryCapitalPOJOMapping")
 })
 @DynamicUpdate
 public class Country {
