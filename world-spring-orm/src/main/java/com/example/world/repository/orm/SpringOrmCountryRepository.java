@@ -1,12 +1,16 @@
 package com.example.world.repository.orm;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import javax.persistence.EntityGraph;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -15,6 +19,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.world.entity.Country;
+import com.example.world.entity.CountryCapital;
 import com.example.world.entity.CountryStatistics;
 import com.example.world.repository.CountryRepository;
 
@@ -29,13 +34,21 @@ public class SpringOrmCountryRepository implements CountryRepository {
 
 	@Override
 	public Optional<Country> findById(String code) {
-		return Optional.ofNullable(em.find(Country.class, code));
+		Map<String,Object> params = new HashMap<>();
+		EntityGraph<?> eg = em.getEntityGraph("graph.Country.cities");
+		params.put("javax.persistence.fetchgraph",eg);
+		Country country = em.find(Country.class, code,params);
+		return Optional.ofNullable(country);
 	}
 
 	@Override
 	public List<Country> findAll(int pageNo, int pageSize) {
-		return em.createNamedQuery("Country.findAll", Country.class).setFirstResult(pageNo * pageSize)
-				.setMaxResults(pageSize).getResultList();
+		EntityGraph<?> eg = em.getEntityGraph("graph.Country.cities");
+		return em.createNamedQuery("Country.findAll", Country.class)
+				.setFirstResult(pageNo * pageSize)
+				.setMaxResults(pageSize)
+				.setHint("javax.persistence.fetchgraph", eg)
+				.getResultList();
 	}
 
 	@Override
@@ -92,6 +105,21 @@ public class SpringOrmCountryRepository implements CountryRepository {
 		return em.createNamedQuery("Country.findAllByContinent", Country.class)
 			   .setParameter("continent", continent)
 				.getResultList();
+	}
+
+	@Override
+	public List<CountryCapital> findAllCapitalsByContinent(String continent) {
+		List<Object[]> resultList = em.createNamedStoredProcedureQuery("ContinentCapitals")
+		  .setParameter("cont", continent)
+		  .getResultList();		
+		return resultList.stream().map(record ->{
+			CountryCapital cc = new CountryCapital();
+			cc.setCode(record[0].toString());
+			cc.setName(record[1].toString());
+			cc.setCityId(Long.parseLong(record[2].toString()));
+			cc.setCapital(record[3].toString());
+			return cc;		
+		}).collect(Collectors.toList());
 	}
 
 }

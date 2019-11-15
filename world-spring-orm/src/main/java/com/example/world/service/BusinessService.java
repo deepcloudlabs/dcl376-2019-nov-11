@@ -62,7 +62,10 @@ public class BusinessService {
 	public void haveSun() {
 		repo.findAllStream(0, 100).forEach(printCountry);		
 	}
-	
+	public void findCapitals() {
+		repo.findAllCapitalsByContinent("Asia")
+		    .forEach(System.out::println);
+	}
 	@Transactional
 	public void haveRun() {
 		Country country = new Country();

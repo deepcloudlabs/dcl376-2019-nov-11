@@ -6,13 +6,25 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.NamedAttributeNode;
+import javax.persistence.NamedEntityGraph;
+import javax.persistence.NamedEntityGraphs;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.NamedStoredProcedureQueries;
+import javax.persistence.NamedStoredProcedureQuery;
+import javax.persistence.NamedSubgraph;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.ParameterMode;
+import javax.persistence.StoredProcedureParameter;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -36,34 +48,55 @@ DELIMITER ;
 @NamedQueries({ @NamedQuery(name = "Country.findAll", query = "select c from Country c"),
 		@NamedQuery(name = "Country.findAllByContinent", query = "select c from Country c where c.continent=:continent"),
 		@NamedQuery(name = "Country.findDistinctContinent", query = "select distinct c.continent from Country c"), })
+@NamedStoredProcedureQueries({
+	@NamedStoredProcedureQuery(
+	    name = "ContinentCapitals",
+	    procedureName = "continent_countries_capital",
+	    parameters = {
+	    	@StoredProcedureParameter(
+	    			mode = ParameterMode.IN,
+	    			type = String.class,
+	    			name = "cont"
+	    	)	
+	    }
+	)
+})
+@NamedEntityGraphs({
+	@NamedEntityGraph(
+		name="graph.Country.cities",
+	    attributeNodes = {
+	    		@NamedAttributeNode(value="cities",subgraph = "cities")
+	    },
+	    subgraphs = {
+	    		@NamedSubgraph(name="cities",attributeNodes = {
+	    				@NamedAttributeNode("country")
+	    		})
+	    }
+	)
+})
 @DynamicUpdate
 public class Country {
 	@Id
 	@Column(name = "code")
+	@Pattern(regexp = "^[A-Z]{3}$",message = "Country code must have three capital letters only!")
 	private String code;
 	@Column(name = "name")
+	@Size(min=3)
 	private String name;
 	@Column(name = "continent", nullable = false)
 	private String continent;
 	@Embedded
+	@NotNull
 	private CountryStatistics statistics;
 	@OneToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REFRESH})
-	@JoinColumn(name = "capital",referencedColumnName = "countrycode")
+	@JoinColumn(name = "capital")
 	private City capital;
-	@OneToMany(mappedBy = "country",cascade =  {CascadeType.PERSIST,CascadeType.MERGE})
+	@OneToMany(mappedBy = "country",
+			fetch = FetchType.LAZY ,
+			cascade =  {CascadeType.PERSIST,CascadeType.MERGE})
 	private List<City> cities;
-	@OneToMany(mappedBy = "id.code")
+	@OneToMany(mappedBy = "id.code",fetch = FetchType.LAZY)
 	private List<CountryLanguage> languages;
-	@Column
-	private int test;
-	
-	public int getTest() {
-		return test;
-	}
-
-	public void setTest(int test) {
-		this.test = test;
-	}
 
 	public Country() {
 	}

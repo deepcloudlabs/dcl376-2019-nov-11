@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 import com.example.world.entity.Country;
+import com.example.world.entity.CountryCapital;
 
 /**
  *
@@ -13,4 +14,5 @@ public interface CountryRepository extends GenericRepository<Country, String> {
 	Set<String> findAllContinents();
 
 	List<Country> findAllByContinent(String continent);
+	List<CountryCapital> findAllCapitalsByContinent(String continent);
 }

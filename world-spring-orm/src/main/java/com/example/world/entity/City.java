@@ -7,9 +7,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Positive;
 
 import org.hibernate.annotations.DynamicUpdate;
 
@@ -27,13 +28,14 @@ public class City {
 	private Long id;
 	@Column(name = "name")
 	private String name;
+	@Positive
 	private long population;
 	@ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
 	@JoinColumn(name = "countrycode",referencedColumnName = "code")
 	private Country country;
-	@Lob
-	@Column(columnDefinition = "longblob")
-	private byte[] photo;
+//	@Lob
+//	@Column(columnDefinition = "longblob")
+//	private byte[] photo;
 	
 	public City() {
 	}
@@ -44,13 +46,13 @@ public class City {
 		this.country = country;
 	}
 
-	public byte[] getPhoto() {
-		return photo;
-	}
-
-	public void setPhoto(byte[] photo) {
-		this.photo = photo;
-	}
+//	public byte[] getPhoto() {
+//		return photo;
+//	}
+//
+//	public void setPhoto(byte[] photo) {
+//		this.photo = photo;
+//	}
 
 	public Long getId() {
 		return id;
