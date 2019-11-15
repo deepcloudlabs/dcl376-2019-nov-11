@@ -6,7 +6,9 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.EntityResult;
 import javax.persistence.FetchType;
+import javax.persistence.FieldResult;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.NamedAttributeNode;
@@ -20,6 +22,7 @@ import javax.persistence.NamedSubgraph;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.ParameterMode;
+import javax.persistence.SqlResultSetMapping;
 import javax.persistence.StoredProcedureParameter;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -33,7 +36,7 @@ import org.hibernate.annotations.DynamicUpdate;
  * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 
-/*
+/* This is the stored procedure used in the mapping
 DELIMITER //
 CREATE PROCEDURE continent_countries_capital
 (IN cont CHAR(20))
@@ -43,6 +46,8 @@ BEGIN
 END //
 DELIMITER ;
  */
+// CALL continent_countries_capital('Asia')
+
 @Entity
 @Table(name = "country")
 @NamedQueries({ @NamedQuery(name = "Country.findAll", query = "select c from Country c"),
@@ -54,13 +59,32 @@ DELIMITER ;
 	    procedureName = "continent_countries_capital",
 	    parameters = {
 	    	@StoredProcedureParameter(
-	    			mode = ParameterMode.IN,
-	    			type = String.class,
-	    			name = "cont"
+    			mode = ParameterMode.IN,
+    			type = String.class,
+    			name = "cont"
 	    	)	
 	    }
 	)
 })
+@SqlResultSetMapping(
+	 name="CountryCapitalMapping",
+	 entities = {
+		@EntityResult(
+			entityClass= Country.class,
+			fields= {
+				@FieldResult(name="code", column="code"),	
+				@FieldResult(name="name", column="name")	
+			}
+		), 
+		@EntityResult(
+			entityClass= City.class,
+			fields= {
+				@FieldResult(name="id", column="id"),	
+				@FieldResult(name="capitalname", column="capitalname")	
+			}
+		) 
+	 }
+)
 @NamedEntityGraphs({
 	@NamedEntityGraph(
 		name="graph.Country.cities",
