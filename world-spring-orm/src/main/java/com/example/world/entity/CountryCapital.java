@@ -8,6 +8,14 @@ public class CountryCapital {
 
 	public CountryCapital() {
 	}
+	
+	public CountryCapital(String code, String name, Long cityId, String capital) {
+		this.code = code;
+		this.name = name;
+		this.cityId = cityId;
+		this.capital = capital;
+	}
+
 
 	public String getCode() {
 		return code;

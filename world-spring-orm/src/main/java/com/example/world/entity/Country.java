@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ColumnResult;
+import javax.persistence.ConstructorResult;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EntityResult;
@@ -14,6 +16,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.NamedAttributeNode;
 import javax.persistence.NamedEntityGraph;
 import javax.persistence.NamedEntityGraphs;
+import javax.persistence.NamedNativeQueries;
+import javax.persistence.NamedNativeQuery;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.NamedStoredProcedureQueries;
@@ -23,6 +27,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.ParameterMode;
 import javax.persistence.SqlResultSetMapping;
+import javax.persistence.SqlResultSetMappings;
 import javax.persistence.StoredProcedureParameter;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
@@ -66,25 +71,40 @@ DELIMITER ;
 	    }
 	)
 })
-@SqlResultSetMapping(
-	 name="CountryCapitalMapping",
-	 entities = {
-		@EntityResult(
-			entityClass= Country.class,
-			fields= {
-				@FieldResult(name="code", column="code"),	
-				@FieldResult(name="name", column="name")	
+@SqlResultSetMappings({	
+	@SqlResultSetMapping(
+			name="CountryCityMapping",	
+			entities = {			 
+					@EntityResult(
+							entityClass= Country.class,
+							fields= {
+									@FieldResult(name="code", column="code"),	
+									@FieldResult(name="name", column="name")	
+							}
+							), 
+					@EntityResult(
+							entityClass= City.class,
+							fields= {
+									@FieldResult(name="id", column="id"),	
+									@FieldResult(name="capitalname", column="capitalname")	
+							}
+							) 
 			}
-		), 
-		@EntityResult(
-			entityClass= City.class,
-			fields= {
-				@FieldResult(name="id", column="id"),	
-				@FieldResult(name="capitalname", column="capitalname")	
+	),
+	@SqlResultSetMapping(
+			name="CountryCapitalPOJOMapping",	
+			classes = {
+				@ConstructorResult(
+			        targetClass = CountryCapital.class,
+	                columns = {
+	                    @ColumnResult(name = "code", type = String.class),
+	                    @ColumnResult(name = "name", type = String.class),
+	                    @ColumnResult(name = "id", type = Long.class),
+	                    @ColumnResult(name = "capital", type = String.class)
+	                })
 			}
-		) 
-	 }
-)
+	)	
+})
 @NamedEntityGraphs({
 	@NamedEntityGraph(
 		name="graph.Country.cities",
@@ -101,17 +121,18 @@ DELIMITER ;
 			name = "graph.Country.citylangs", 
 			attributeNodes = {
 				@NamedAttributeNode(value = "cities", subgraph = "cities"),
-				@NamedAttributeNode(value = "languages", subgraph = "languages") 
+				@NamedAttributeNode(value = "languages") 
 			}, 
 			subgraphs = {
-				@NamedSubgraph(name = "cities", attributeNodes = @NamedAttributeNode("country")),
-				@NamedSubgraph(name = "languages", attributeNodes = @NamedAttributeNode("country")) 
+				@NamedSubgraph(name = "cities", attributeNodes = @NamedAttributeNode("country")) 
 			}
 		),
 		@NamedEntityGraph(
 			name = "graph.Country.languages", 
-			attributeNodes = @NamedAttributeNode(value = "languages", subgraph = "languages"), 
-			subgraphs = @NamedSubgraph(name = "languages", attributeNodes = @NamedAttributeNode("country")))
+			attributeNodes = @NamedAttributeNode(value = "languages", subgraph = "languages"))
+})
+@NamedNativeQueries({
+	@NamedNativeQuery(name = "ContinentCapitals",query = "SELECT co.code, co.name as name, ci.id, ci.name as capital FROM country as co, city ci WHERE co.continent=? AND co.capital=ci.id",resultSetMapping = "CountryCapitalPOJOMapping")
 })
 @DynamicUpdate
 public class Country {

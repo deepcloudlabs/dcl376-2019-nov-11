@@ -15,4 +15,5 @@ public interface CountryRepository extends GenericRepository<Country, String> {
 
 	List<Country> findAllByContinent(String continent);
 	List<CountryCapital> findAllCapitalsByContinent(String continent);
+	List<CountryCapital> findAllNativeCapitalsByContinent(String continent);
 }

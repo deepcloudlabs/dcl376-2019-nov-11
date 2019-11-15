@@ -123,4 +123,12 @@ public class SpringOrmCountryRepository implements CountryRepository {
 		}).collect(Collectors.toList());
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<CountryCapital> findAllNativeCapitalsByContinent(String continent) {
+		return em.createNamedQuery("ContinentCapitals")
+				 .setParameter(1, continent)
+				 .getResultList();
+	}
+
 }

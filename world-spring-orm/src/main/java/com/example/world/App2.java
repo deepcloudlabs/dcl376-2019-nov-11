@@ -30,7 +30,8 @@ public class App2 {
 			final CountryRepository repo = container.getBean(CountryRepository.class);
 			BusinessService bs = container.getBean(BusinessService.class);
 //			bs.haveRun();
-			bs.findCapitals();
+//			bs.findCapitals();
+			bs.findNativeCapitals();
 		}
 	}
 }

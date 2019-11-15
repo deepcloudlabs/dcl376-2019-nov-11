@@ -33,22 +33,22 @@ public class BusinessService {
 	@Autowired
 	private CountryRepository repo;
 
-
 	@Transactional
 	public void haveGun() {
 		repo.removeById("AAA").ifPresent(printCountry);
 	}
-	
+
 	@SuppressWarnings("unused")
 	@Transactional
 	public void haveFun() {
 		// repo.findById("TUR").ifPresent(printCountry);
-		repo.findAll(0, 1).stream().filter(country -> Objects.nonNull(country.getStatistics().getGnp())).forEach(country -> {
-			CountryStatistics stat = country.getStatistics();
-			System.err.println(country.getClass());
+		repo.findAll(0, 1).stream().filter(country -> Objects.nonNull(country.getStatistics().getGnp()))
+				.forEach(country -> {
+					CountryStatistics stat = country.getStatistics();
+					System.err.println(country.getClass());
 //			stat.setGnp(stat.getGnp() + 1);
 //			country.getCities().forEach(city->city.setPopulation(city.getPopulation()+1));
-		});
+				});
 //		try {
 //			TimeUnit.SECONDS.sleep(10);
 //			System.err.println(new Date());
@@ -59,12 +59,17 @@ public class BusinessService {
 
 	@Transactional
 	public void haveSun() {
-		repo.findAllStream(0, 100).forEach(printCountry);		
+		repo.findAllStream(0, 100).forEach(printCountry);
 	}
+
 	public void findCapitals() {
-		repo.findAllCapitalsByContinent("Asia")
-		    .forEach(System.out::println);
+		repo.findAllCapitalsByContinent("Asia").forEach(System.out::println);
 	}
+
+	public void findNativeCapitals() {
+		repo.findAllNativeCapitalsByContinent("Asia").forEach(System.out::println);
+	}
+
 	@Transactional
 	public void haveRun() {
 		Country country = new Country();
