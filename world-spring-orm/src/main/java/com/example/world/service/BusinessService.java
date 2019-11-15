@@ -1,10 +1,8 @@
 package com.example.world.service;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +39,7 @@ public class BusinessService {
 		repo.removeById("AAA").ifPresent(printCountry);
 	}
 	
+	@SuppressWarnings("unused")
 	@Transactional
 	public void haveFun() {
 		// repo.findById("TUR").ifPresent(printCountry);

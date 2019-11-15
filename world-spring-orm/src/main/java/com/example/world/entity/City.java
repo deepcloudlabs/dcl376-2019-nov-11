@@ -9,14 +9,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.Positive;
 
 import org.hibernate.annotations.DynamicUpdate;
 
 /**
  *
- *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 @Entity
 @Table(name = "city")
@@ -30,13 +29,13 @@ public class City {
 	private String name;
 	@Positive
 	private long population;
-	@ManyToOne(cascade = {CascadeType.PERSIST,CascadeType.MERGE})
-	@JoinColumn(name = "countrycode",referencedColumnName = "code")
+	@ManyToOne(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@JoinColumn(name = "countrycode", referencedColumnName = "code")
 	private Country country;
 //	@Lob
 //	@Column(columnDefinition = "longblob")
 //	private byte[] photo;
-	
+
 	public City() {
 	}
 

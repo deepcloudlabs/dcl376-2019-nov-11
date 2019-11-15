@@ -107,6 +107,7 @@ public class SpringOrmCountryRepository implements CountryRepository {
 				.getResultList();
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<CountryCapital> findAllCapitalsByContinent(String continent) {
 		List<Object[]> resultList = em.createNamedStoredProcedureQuery("ContinentCapitals")
