@@ -13,9 +13,8 @@ import org.hibernate.annotations.DynamicUpdate;
 import com.example.world.entity.converter.BooleanCharacterConverter;
 
 /**
- * 
- * @author Binnur Kurt (binnur.kurt@gmail.com)
  *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 @Entity
 @DynamicUpdate

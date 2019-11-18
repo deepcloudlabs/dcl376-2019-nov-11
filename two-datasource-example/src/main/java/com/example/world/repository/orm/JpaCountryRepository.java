@@ -15,6 +15,10 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.world.entity.Country;
 import com.example.world.repository.CountryRepository;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Repository
 public class JpaCountryRepository implements CountryRepository {
 	@PersistenceContext(unitName="worldPU")

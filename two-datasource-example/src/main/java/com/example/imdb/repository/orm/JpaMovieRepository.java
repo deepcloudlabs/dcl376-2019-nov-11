@@ -13,6 +13,10 @@ import org.springframework.stereotype.Repository;
 import com.example.imdb.entity.Movie;
 import com.example.imdb.repository.MovieRepository;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Repository
 public class JpaMovieRepository implements MovieRepository {
 	@PersistenceContext(unitName = "imdbPU")

@@ -4,13 +4,11 @@ import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
 
 /**
- * 
- * @author Binnur Kurt (binnur.kurt@gmail.com)
  *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 @Converter
-public class BooleanCharacterConverter 
-implements AttributeConverter<Boolean, String> {
+public class BooleanCharacterConverter implements AttributeConverter<Boolean, String> {
 
 	@Override
 	public String convertToDatabaseColumn(Boolean value) {

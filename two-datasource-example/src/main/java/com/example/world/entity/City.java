@@ -14,6 +14,10 @@ import javax.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Entity
 @Table(name = "city")
 @DynamicUpdate

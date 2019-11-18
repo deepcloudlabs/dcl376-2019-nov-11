@@ -12,6 +12,10 @@ import javax.persistence.JoinTable;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+/**
+ *
+ *  @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Entity
 @Table(name="directors")
 public class Director {

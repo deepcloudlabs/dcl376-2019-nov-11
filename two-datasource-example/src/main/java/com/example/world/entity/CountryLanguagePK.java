@@ -6,9 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
- * 
- * @author Binnur Kurt (binnur.kurt@gmail.com)
  *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 @SuppressWarnings("serial")
 @Embeddable

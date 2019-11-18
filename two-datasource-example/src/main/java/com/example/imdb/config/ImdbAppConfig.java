@@ -15,9 +15,13 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Configuration
 @PropertySource("classpath:database-imdb.properties")
-@ComponentScan(basePackages = { "com.example.imdb.repository"})
+@ComponentScan(basePackages = { "com.example.imdb.repository" })
 @EnableTransactionManagement
 public class ImdbAppConfig {
 	@Value("${imdb.jdbc.url}")
@@ -44,17 +48,15 @@ public class ImdbAppConfig {
 
 	@Bean("imdbTransactionManager")
 	public JpaTransactionManager jpaTransactionManager(
-			@Qualifier("imdbEntityManagerFactory") 
-			EntityManagerFactory emf) {
+			@Qualifier("imdbEntityManagerFactory") EntityManagerFactory emf) {
 		return new JpaTransactionManager(emf);
 	}
 
 	@Bean("imdbEntityManagerFactory")
-	public LocalContainerEntityManagerFactoryBean entityManagerFactor(
-			@Qualifier("imdbDataSource") DataSource ds) {
+	public LocalContainerEntityManagerFactoryBean entityManagerFactor(@Qualifier("imdbDataSource") DataSource ds) {
 		LocalContainerEntityManagerFactoryBean lcemfb = new LocalContainerEntityManagerFactoryBean();
 		lcemfb.setDataSource(ds);
-		lcemfb.setPersistenceUnitName("imdbPU");		
+		lcemfb.setPersistenceUnitName("imdbPU");
 		HibernateJpaVendorAdapter hjva = new HibernateJpaVendorAdapter();
 		hjva.setShowSql(true);
 		lcemfb.setJpaVendorAdapter(hjva);

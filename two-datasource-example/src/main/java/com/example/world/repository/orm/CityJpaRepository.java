@@ -16,13 +16,12 @@ import com.example.world.entity.City;
 import com.example.world.repository.CityRepository;
 
 /**
- * 
- * @author Binnur Kurt (binnur.kurt@gmail.com)
  *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 @Repository
 public class CityJpaRepository implements CityRepository {
-	@PersistenceContext(unitName="worldPU")
+	@PersistenceContext(unitName = "worldPU")
 	private EntityManager entityManager;
 
 	@Override

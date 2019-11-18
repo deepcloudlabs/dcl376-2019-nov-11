@@ -13,11 +13,16 @@ import javax.persistence.JoinTable;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
+
+import com.example.imdb.constraint.Imdb;
 
 @Entity
 @Table(name="movies")
@@ -33,6 +38,7 @@ public class Movie {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;	
 	private String title;
+	@Imdb
 	private String imdb;
 	private int year;
 
@@ -47,6 +53,8 @@ public class Movie {
 			}
 	)
 	private List<Director> directors;
+	@Transient
+	private double volume;
 	
 	@OneToMany(fetch=FetchType.LAZY)
 	@JoinTable(
@@ -63,6 +71,16 @@ public class Movie {
 	public Movie() {
 	}
 
+	@PrePersist
+	public void initCreatedTime() {
+		
+	}
+	
+	@PreUpdate
+	public void initModifiedTime() {
+		
+	}
+	
 	public Long getId() {
 		return id;
 	}

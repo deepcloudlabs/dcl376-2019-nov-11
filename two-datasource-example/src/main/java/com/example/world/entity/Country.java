@@ -15,7 +15,11 @@ import javax.persistence.Table;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
-@Entity // (1)
+/**
+ *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
+@Entity
 @Table(name = "Country")
 @DynamicUpdate
 @DynamicInsert
@@ -24,7 +28,7 @@ import org.hibernate.annotations.DynamicUpdate;
 				+ "where c.continent=:continent"),
 		@NamedQuery(name = "Country.findContinents", query = "select distinct(c.continent) from Country c ") })
 public class Country {
-	@Id // (2)
+	@Id
 	@Column(name = "code")
 	private String kod;
 	@Column(name = "name")

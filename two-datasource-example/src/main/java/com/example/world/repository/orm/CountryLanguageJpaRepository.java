@@ -14,14 +14,13 @@ import com.example.world.entity.CountryLanguagePK;
 import com.example.world.repository.CountryLanguageRepository;
 
 /**
- * 
- * @author Binnur Kurt (binnur.kurt@gmail.com)
  *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
  */
 @Repository
 public class CountryLanguageJpaRepository implements CountryLanguageRepository {
 
-	@PersistenceContext(unitName="worldPU")
+	@PersistenceContext(unitName = "worldPU")
 	private EntityManager entityManager;
 
 	@Override

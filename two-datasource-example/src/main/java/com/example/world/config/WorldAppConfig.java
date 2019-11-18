@@ -15,6 +15,10 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ *
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ */
 @Configuration
 @PropertySource("classpath:database-world.properties")
 @ComponentScan(basePackages = { "com.example.world.repository", "com.example.world.service" })
@@ -43,7 +47,8 @@ public class WorldAppConfig {
 	}
 
 	@Bean("worldTransactionManager")
-	public JpaTransactionManager jpaTransactionManager(@Qualifier("worldEntityManagerFactory") EntityManagerFactory emf) {
+	public JpaTransactionManager jpaTransactionManager(
+			@Qualifier("worldEntityManagerFactory") EntityManagerFactory emf) {
 		return new JpaTransactionManager(emf);
 	}
 

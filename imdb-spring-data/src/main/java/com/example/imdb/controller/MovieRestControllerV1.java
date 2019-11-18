@@ -1,7 +1,6 @@
 package com.example.imdb.controller;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.modelmapper.ModelMapper;
@@ -21,12 +20,12 @@ import com.example.imdb.service.MovieService;
 @RestController
 @RequestScope
 @CrossOrigin
-@RequestMapping("movies")
-public class MovieRestController {
+@RequestMapping("/v1/movies")
+public class MovieRestControllerV1 {
 	private MovieService movieService;
 	private ModelMapper modelMapper;
 
-	public MovieRestController(MovieService movieService, ModelMapper modelMapper) {
+	public MovieRestControllerV1(MovieService movieService, ModelMapper modelMapper) {
 		this.movieService = movieService;
 		this.modelMapper = modelMapper;
 	}
