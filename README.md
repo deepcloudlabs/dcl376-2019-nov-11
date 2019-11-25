@@ -1,4 +1,4 @@
-# DCL-376: Spring Data with Hibernate
+## DCL-376: Spring Data with Hibernate
 These projects are created as part of the following training:
 DCL-376 "Spring Data with Hibernate"
 
